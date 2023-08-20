@@ -1,0 +1,11 @@
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\bin\Debug\Bank.exe.config
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\bin\Debug\Bank.exe
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\bin\Debug\Bank.pdb
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.csproj.AssemblyReference.cache
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.csproj.SuggestedBindingRedirects.cache
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.form_login.resources
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.Properties.Resources.resources
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.csproj.GenerateResource.cache
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.exe
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.pdb
