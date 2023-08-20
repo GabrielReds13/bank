@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_login));
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btn_criarConta = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_recuperarSenha = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txt_senha = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.txt_conta = new System.Windows.Forms.TextBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_login = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,16 +48,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.BackgroundImage = global::Bank.Properties.Resources.Logo_BigSize_Black;
-            this.pictureBox6.Location = new System.Drawing.Point(116, 299);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(95, 52);
-            this.pictureBox6.TabIndex = 24;
-            this.pictureBox6.TabStop = false;
             // 
             // btn_criarConta
             // 
@@ -93,6 +83,7 @@
             this.btn_recuperarSenha.Size = new System.Drawing.Size(87, 16);
             this.btn_recuperarSenha.TabIndex = 21;
             this.btn_recuperarSenha.Text = "Clique aqui.";
+            this.btn_recuperarSenha.Click += new System.EventHandler(this.btn_recuperarSenha_Click);
             // 
             // label1
             // 
@@ -105,14 +96,6 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Esqueceu a senha?";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(29, 461);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(270, 1);
-            this.pictureBox5.TabIndex = 19;
-            this.pictureBox5.TabStop = false;
-            // 
             // txt_senha
             // 
             this.txt_senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -124,14 +107,6 @@
             this.txt_senha.TabIndex = 18;
             this.txt_senha.Text = "Senha";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(29, 403);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(270, 1);
-            this.pictureBox4.TabIndex = 17;
-            this.pictureBox4.TabStop = false;
-            // 
             // txt_conta
             // 
             this.txt_conta.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -142,6 +117,32 @@
             this.txt_conta.Size = new System.Drawing.Size(270, 20);
             this.txt_conta.TabIndex = 16;
             this.txt_conta.Text = "Conta";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.BackgroundImage = global::Bank.Properties.Resources.Logo_BigSize_Black;
+            this.pictureBox6.Location = new System.Drawing.Point(116, 299);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(95, 52);
+            this.pictureBox6.TabIndex = 24;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(29, 461);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(270, 1);
+            this.pictureBox5.TabIndex = 19;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(29, 403);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(270, 1);
+            this.pictureBox4.TabIndex = 17;
+            this.pictureBox4.TabStop = false;
             // 
             // btn_login
             // 
@@ -193,6 +194,7 @@
             this.MaximumSize = new System.Drawing.Size(340, 660);
             this.MinimumSize = new System.Drawing.Size(340, 660);
             this.Name = "form_login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bank - Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

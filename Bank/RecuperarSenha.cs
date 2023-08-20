@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace Bank
 {
-    public partial class RecuperarSenha : Form
+    public partial class form_recuperarSenha : Form
     {
-        public RecuperarSenha()
+        // - Metodos -
+        public form_recuperarSenha()
         {
             InitializeComponent();
+        }
+
+        // Cancelar recuperacao
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            form_recuperarSenha recuperarSenha = new form_recuperarSenha();
+            recuperarSenha.Close();
+            form_login login = new form_login();
+            this.Visible = false;
+            login.ShowDialog();
         }
     }
 }

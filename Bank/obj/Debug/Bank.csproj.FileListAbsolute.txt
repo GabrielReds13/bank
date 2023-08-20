@@ -9,3 +9,4 @@ C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\
 C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.csproj.CoreCompileInputs.cache
 C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.exe
 C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.pdb
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.form_recuperarSenha.resources

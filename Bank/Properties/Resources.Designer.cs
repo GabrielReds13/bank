@@ -63,6 +63,16 @@ namespace Bank.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Alterar_Button {
+            get {
+                object obj = ResourceManager.GetObject("Alterar-Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Background_Wallpaper_Login {
             get {
                 object obj = ResourceManager.GetObject("Background-Wallpaper-Login", resourceCulture);
@@ -86,6 +96,16 @@ namespace Bank.Properties {
         internal static System.Drawing.Bitmap Background_Wallpaper_Toggle_Password {
             get {
                 object obj = ResourceManager.GetObject("Background-Wallpaper-Toggle-Password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cancelar_Button {
+            get {
+                object obj = ResourceManager.GetObject("Cancelar-Button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
