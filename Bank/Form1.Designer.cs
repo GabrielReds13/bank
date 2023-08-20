@@ -60,6 +60,7 @@
             this.btn_criarConta.Size = new System.Drawing.Size(70, 16);
             this.btn_criarConta.TabIndex = 23;
             this.btn_criarConta.Text = "Crie uma.";
+            this.btn_criarConta.Click += new System.EventHandler(this.btn_criarConta_Click);
             // 
             // label3
             // 
@@ -122,7 +123,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.BackgroundImage = global::Bank.Properties.Resources.Logo_BigSize_Black;
-            this.pictureBox6.Location = new System.Drawing.Point(116, 299);
+            this.pictureBox6.Location = new System.Drawing.Point(116, 297);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(95, 52);
             this.pictureBox6.TabIndex = 24;
@@ -194,7 +195,6 @@
             this.MaximumSize = new System.Drawing.Size(340, 660);
             this.MinimumSize = new System.Drawing.Size(340, 660);
             this.Name = "form_login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bank - Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

@@ -58,7 +58,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(109, 306);
+            this.label1.Location = new System.Drawing.Point(109, 292);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 18);
             this.label1.TabIndex = 21;
@@ -69,7 +69,7 @@
             // 
             this.txt_novaSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_novaSenha.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_novaSenha.Location = new System.Drawing.Point(27, 512);
+            this.txt_novaSenha.Location = new System.Drawing.Point(27, 513);
             this.txt_novaSenha.Multiline = true;
             this.txt_novaSenha.Name = "txt_novaSenha";
             this.txt_novaSenha.Size = new System.Drawing.Size(270, 20);
@@ -80,7 +80,7 @@
             // 
             this.txt_conta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_conta.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_conta.Location = new System.Drawing.Point(27, 454);
+            this.txt_conta.Location = new System.Drawing.Point(27, 455);
             this.txt_conta.Multiline = true;
             this.txt_conta.Name = "txt_conta";
             this.txt_conta.Size = new System.Drawing.Size(270, 20);
@@ -91,7 +91,7 @@
             // 
             this.txt_cpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_cpf.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cpf.Location = new System.Drawing.Point(27, 399);
+            this.txt_cpf.Location = new System.Drawing.Point(27, 400);
             this.txt_cpf.Multiline = true;
             this.txt_cpf.Name = "txt_cpf";
             this.txt_cpf.Size = new System.Drawing.Size(270, 20);
@@ -102,7 +102,7 @@
             // 
             this.txt_nomeCompleto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_nomeCompleto.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nomeCompleto.Location = new System.Drawing.Point(27, 346);
+            this.txt_nomeCompleto.Location = new System.Drawing.Point(27, 347);
             this.txt_nomeCompleto.Multiline = true;
             this.txt_nomeCompleto.Name = "txt_nomeCompleto";
             this.txt_nomeCompleto.Size = new System.Drawing.Size(270, 20);
@@ -113,7 +113,7 @@
             // 
             this.btn_cancelar.BackColor = System.Drawing.Color.White;
             this.btn_cancelar.BackgroundImage = global::Bank.Properties.Resources.Cancelar_Button;
-            this.btn_cancelar.Location = new System.Drawing.Point(27, 560);
+            this.btn_cancelar.Location = new System.Drawing.Point(27, 561);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(129, 36);
             this.btn_cancelar.TabIndex = 31;
@@ -123,7 +123,7 @@
             // btn_alterar
             // 
             this.btn_alterar.BackgroundImage = global::Bank.Properties.Resources.Alterar_Button;
-            this.btn_alterar.Location = new System.Drawing.Point(168, 560);
+            this.btn_alterar.Location = new System.Drawing.Point(168, 561);
             this.btn_alterar.Name = "btn_alterar";
             this.btn_alterar.Size = new System.Drawing.Size(129, 36);
             this.btn_alterar.TabIndex = 30;
@@ -131,7 +131,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(27, 373);
+            this.pictureBox6.Location = new System.Drawing.Point(27, 374);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(270, 1);
             this.pictureBox6.TabIndex = 29;
@@ -139,7 +139,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(27, 426);
+            this.pictureBox3.Location = new System.Drawing.Point(27, 427);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(270, 1);
             this.pictureBox3.TabIndex = 27;
@@ -147,7 +147,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(27, 539);
+            this.pictureBox5.Location = new System.Drawing.Point(27, 540);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(270, 1);
             this.pictureBox5.TabIndex = 25;
@@ -155,7 +155,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(27, 481);
+            this.pictureBox4.Location = new System.Drawing.Point(27, 482);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(270, 1);
             this.pictureBox4.TabIndex = 23;
@@ -164,9 +164,9 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 290);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 277);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(300, 318);
+            this.pictureBox2.Size = new System.Drawing.Size(300, 332);
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
@@ -202,7 +202,6 @@
             this.MaximumSize = new System.Drawing.Size(340, 660);
             this.MinimumSize = new System.Drawing.Size(340, 660);
             this.Name = "form_recuperarSenha";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bank - Recuperar Senha";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancelar)).EndInit();

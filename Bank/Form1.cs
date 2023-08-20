@@ -21,11 +21,19 @@ namespace Bank
         // Recuperar senha
         private void btn_recuperarSenha_Click(object sender, EventArgs e)
         {
-            form_login login = new form_login();
-            login.Close();
             this.Visible = false;
             form_recuperarSenha recuperarSenha = new form_recuperarSenha();
             recuperarSenha.ShowDialog();
+            this.Visible = true;
+        }
+
+        // Criar conta
+        private void btn_criarConta_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            form_criarConta criarConta = new form_criarConta();
+            criarConta.ShowDialog();
+            this.Visible = true;
         }
     }
 }

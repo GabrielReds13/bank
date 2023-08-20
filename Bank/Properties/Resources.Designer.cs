@@ -113,6 +113,16 @@ namespace Bank.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Criar_Button {
+            get {
+                object obj = ResourceManager.GetObject("Criar-Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_Button {
             get {
                 object obj = ResourceManager.GetObject("Login-Button", resourceCulture);

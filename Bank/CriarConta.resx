@@ -117,32 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Background-Wallpaper-New-Account" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background-Wallpaper-New-Account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cancelar-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cancelar-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Login-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Background-Wallpaper-Toggle-Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background-Wallpaper-Toggle-Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo-SmallSize-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo-SmallSize-White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Background-Wallpaper-Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background-Wallpaper-Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alterar-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alterar-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Logo-BigSize-Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo-BigSize-Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Criar-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Criar-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        TkSuQmCC
+</value>
   </data>
 </root>
