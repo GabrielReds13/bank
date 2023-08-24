@@ -49,6 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Conta.cs" />
+    <Compile Include="Classes\Endereco.cs" />
+    <Compile Include="Classes\Pessoa.cs" />
     <Compile Include="CriarConta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,7 +117,6 @@
     <None Include="Resources\Background-Wallpaper-Login.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
     <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
