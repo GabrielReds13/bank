@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bank.Classes
 {
-    internal class Endereco
+    internal class Agencias
     {
-        // - Atributos -
-        public string EnderecoCompleto { get; set; }
-        public string Cidade { get; set; }
     }
 }
