@@ -1,1 +1,30 @@
-﻿
+﻿[
+  {
+    "Cidade": "Ariquemes - RO",
+    "Agencia": "112-16"
+  },
+  {
+    "Cidade": "Alto Paraiso - RO",
+    "Agencia": "743-81"
+  },
+  {
+    "Cidade": "Cacoal - RO",
+    "Agencia": "256-64"
+  },
+  {
+    "Cidade": "Ji-Paraná - RO",
+    "Agencia": "990-38"
+  },
+  {
+    "Cidade": "Jaru - RO",
+    "Agencia": "808-00"
+  },
+  {
+    "Cidade": "Ouro Preto - RO",
+    "Agencia": "516-70"
+  },
+  {
+    "Cidade": "Porto Velho - RO",
+    "Agencia": "258-53"
+  }
+]

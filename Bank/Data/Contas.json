@@ -1,1 +1,18 @@
-﻿
+﻿[
+  {
+    "Conta": 93849,
+    "Agencia": {
+      "Cidade": "Ariquemes - RO",
+      "Agencia": "112-16"
+    },
+    "Saldo": 1274260.74,
+    "LimiteMensal": 5000000.00,
+    "Senha": "124.Abc@8",
+
+    "Titular": "Gabriel Guedes",
+    "Cpf": "123.456.789-10",
+    "Idade": 18,
+    "Telefone": "(69) 99334-1915",
+    "Endereco": "R. Rio Veneza - Vento do Oeste"
+  }
+]

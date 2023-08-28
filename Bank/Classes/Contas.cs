@@ -7,11 +7,11 @@ using System.Windows.Forms;
 
 namespace Bank.Classes
 {
-    internal class Conta
+    public class Contas : Pessoa
     {
         // - Atributos -
-        public int Id { get; set; }
-        public int Agencia { get; set; }
+        public int Conta { get; set; }
+        public Agencias Agencias { get; set; }
         public double Saldo { get; set; }
         public double LimiteMensal { get; set; }
         public string Senha { get; set; }
@@ -20,39 +20,5 @@ namespace Bank.Classes
 
 
         // - Metodos -
-        public void Sacar(double valor)
-        {
-            try
-            {
-                // Saque
-                if (valor > Saldo || valor < 1) MessageBox.Show("Valor inválido.");
-                else Saldo -= valor;
-            }
-            catch(Exception ex) 
-            {
-                // Erro
-                MessageBox.Show("Erro ao sacar.");
-            }
-        }
-
-        public void Depositar(double valor)
-        {
-            try
-            {
-                // Deposito
-                if (valor < 0) MessageBox.Show("Valor inválido.");
-                else Saldo += valor;
-            }
-            catch (Exception ex)
-            {
-                // Erro
-                MessageBox.Show("Erro ao depositar.");
-            }
-        }
-
-        public void Pix(string chaveRemetente)
-        {
-
-        }
     }
 }

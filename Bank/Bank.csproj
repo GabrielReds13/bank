@@ -36,8 +36,12 @@
     <ApplicationIcon>App-Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,8 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Conta.cs" />
-    <Compile Include="Classes\Endereco.cs" />
+    <Compile Include="Classes\Agencias.cs" />
+    <Compile Include="Classes\Contas.cs" />
     <Compile Include="Classes\Pessoa.cs" />
     <Compile Include="CriarConta.cs">
       <SubType>Form</SubType>
@@ -91,6 +95,10 @@
     <EmbeddedResource Include="RecuperarSenha.resx">
       <DependentUpon>RecuperarSenha.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Data\Agencias.json" />
+    <None Include="Data\Contas.json" />
+    <None Include="Data\Historico.json" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,8 +124,6 @@
     <None Include="Resources\Background-Wallpaper-New-Account.png" />
     <None Include="Resources\Background-Wallpaper-Login.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
