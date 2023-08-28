@@ -32,7 +32,7 @@
             this.txt_nomeCompleto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_cpf = new System.Windows.Forms.TextBox();
-            this.select_cidade = new System.Windows.Forms.ComboBox();
+            this.select_cidade_agencia = new System.Windows.Forms.ComboBox();
             this.txt_idade = new System.Windows.Forms.TextBox();
             this.btn_criar = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -44,8 +44,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.txt_telefone = new System.Windows.Forms.TextBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.txt_agencia = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.txt_endereco = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -59,7 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
@@ -99,16 +96,17 @@
             this.txt_cpf.TabIndex = 37;
             this.txt_cpf.Text = "CPF";
             // 
-            // select_cidade
+            // select_cidade_agencia
             // 
-            this.select_cidade.BackColor = System.Drawing.Color.White;
-            this.select_cidade.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold);
-            this.select_cidade.FormattingEnabled = true;
-            this.select_cidade.Location = new System.Drawing.Point(27, 458);
-            this.select_cidade.Name = "select_cidade";
-            this.select_cidade.Size = new System.Drawing.Size(130, 24);
-            this.select_cidade.TabIndex = 41;
-            this.select_cidade.Text = "Cidade";
+            this.select_cidade_agencia.BackColor = System.Drawing.Color.White;
+            this.select_cidade_agencia.Enabled = false;
+            this.select_cidade_agencia.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold);
+            this.select_cidade_agencia.FormattingEnabled = true;
+            this.select_cidade_agencia.Location = new System.Drawing.Point(27, 458);
+            this.select_cidade_agencia.Name = "select_cidade_agencia";
+            this.select_cidade_agencia.Size = new System.Drawing.Size(270, 24);
+            this.select_cidade_agencia.TabIndex = 41;
+            this.select_cidade_agencia.Text = "Cidade e Agência";
             // 
             // txt_idade
             // 
@@ -135,7 +133,7 @@
             // 
             this.pictureBox6.Location = new System.Drawing.Point(27, 489);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(130, 1);
+            this.pictureBox6.Size = new System.Drawing.Size(270, 1);
             this.pictureBox6.TabIndex = 42;
             this.pictureBox6.TabStop = false;
             // 
@@ -211,26 +209,6 @@
             this.txt_telefone.TabIndex = 45;
             this.txt_telefone.Text = "Telefone";
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(168, 489);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(130, 1);
-            this.pictureBox8.TabIndex = 48;
-            this.pictureBox8.TabStop = false;
-            // 
-            // txt_agencia
-            // 
-            this.txt_agencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_agencia.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_agencia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(176)))), ((int)(((byte)(176)))));
-            this.txt_agencia.Location = new System.Drawing.Point(167, 461);
-            this.txt_agencia.Multiline = true;
-            this.txt_agencia.Name = "txt_agencia";
-            this.txt_agencia.Size = new System.Drawing.Size(130, 20);
-            this.txt_agencia.TabIndex = 47;
-            this.txt_agencia.Text = "Agência";
-            // 
             // pictureBox9
             // 
             this.pictureBox9.Location = new System.Drawing.Point(27, 437);
@@ -279,14 +257,12 @@
             this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.txt_endereco);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.txt_agencia);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.txt_telefone);
             this.Controls.Add(this.btn_criar);
             this.Controls.Add(this.txt_idade);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.select_cidade);
+            this.Controls.Add(this.select_cidade_agencia);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txt_cpf);
@@ -311,7 +287,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
@@ -331,13 +306,11 @@
         private System.Windows.Forms.TextBox txt_cpf;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.ComboBox select_cidade;
+        private System.Windows.Forms.ComboBox select_cidade_agencia;
         private System.Windows.Forms.TextBox txt_idade;
         private System.Windows.Forms.PictureBox btn_criar;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.TextBox txt_telefone;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.TextBox txt_agencia;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.TextBox txt_endereco;
         private System.Windows.Forms.PictureBox pictureBox10;

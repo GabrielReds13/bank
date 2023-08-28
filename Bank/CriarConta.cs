@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Bank.Classes;
 
 namespace Bank
 {
@@ -16,6 +17,7 @@ namespace Bank
         public form_criarConta()
         {
             InitializeComponent();
+            select_cidade_agencia.Items.AddRange(BankAcademic.ListarAgencias().ToArray());
         }
 
         // Cancelar criacao de conta

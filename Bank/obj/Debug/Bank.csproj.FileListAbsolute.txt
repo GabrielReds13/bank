@@ -11,3 +11,6 @@ C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\
 C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.pdb
 C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.form_recuperarSenha.resources
 C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.form_criarConta.resources
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.csproj.CopyComplete

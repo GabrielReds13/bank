@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Agencias.cs" />
+    <Compile Include="Classes\BankAcademic.cs" />
     <Compile Include="Classes\Contas.cs" />
     <Compile Include="Classes\Pessoa.cs" />
     <Compile Include="CriarConta.cs">
