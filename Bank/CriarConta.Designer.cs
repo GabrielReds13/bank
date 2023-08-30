@@ -32,7 +32,7 @@
             this.txt_nomeCompleto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_cpf = new System.Windows.Forms.TextBox();
-            this.select_cidade = new System.Windows.Forms.ComboBox();
+            this.select_cidade_agencia = new System.Windows.Forms.ComboBox();
             this.txt_idade = new System.Windows.Forms.TextBox();
             this.btn_criar = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -99,19 +99,19 @@
             this.txt_cpf.TabIndex = 37;
             this.txt_cpf.Text = "CPF";
             // 
-            // select_cidade
+            // select_cidade_agencia
             // 
-            this.select_cidade.BackColor = System.Drawing.Color.White;
-            this.select_cidade.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold);
-            this.select_cidade.FormattingEnabled = true;
-            this.select_cidade.Location = new System.Drawing.Point(27, 458);
-            this.select_cidade.Name = "select_cidade";
-            this.select_cidade.Size = new System.Drawing.Size(188, 24);
-            this.select_cidade.TabIndex = 41;
-            this.select_cidade.Text = "Cidade";
-            this.select_cidade.TextUpdate += new System.EventHandler(this.select_cidade_agencia_TextUpdate);
-            this.select_cidade.DropDownClosed += new System.EventHandler(this.select_cidade_agencia_DropDownClosed);
-            this.select_cidade.Leave += new System.EventHandler(this.select_cidade_agencia_Leave);
+            this.select_cidade_agencia.BackColor = System.Drawing.Color.White;
+            this.select_cidade_agencia.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold);
+            this.select_cidade_agencia.FormattingEnabled = true;
+            this.select_cidade_agencia.Location = new System.Drawing.Point(27, 458);
+            this.select_cidade_agencia.Name = "select_cidade_agencia";
+            this.select_cidade_agencia.Size = new System.Drawing.Size(188, 24);
+            this.select_cidade_agencia.TabIndex = 41;
+            this.select_cidade_agencia.Text = "Cidade";
+            this.select_cidade_agencia.TextUpdate += new System.EventHandler(this.select_cidade_agencia_TextUpdate);
+            this.select_cidade_agencia.DropDownClosed += new System.EventHandler(this.select_cidade_agencia_DropDownClosed);
+            this.select_cidade_agencia.Leave += new System.EventHandler(this.select_cidade_agencia_Leave);
             // 
             // txt_idade
             // 
@@ -290,7 +290,7 @@
             this.Controls.Add(this.btn_criar);
             this.Controls.Add(this.txt_idade);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.select_cidade);
+            this.Controls.Add(this.select_cidade_agencia);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txt_cpf);
@@ -333,7 +333,7 @@
         private System.Windows.Forms.TextBox txt_cpf;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.ComboBox select_cidade;
+        private System.Windows.Forms.ComboBox select_cidade_agencia;
         private System.Windows.Forms.TextBox txt_idade;
         private System.Windows.Forms.PictureBox btn_criar;
         private System.Windows.Forms.PictureBox pictureBox7;

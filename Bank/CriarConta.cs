@@ -20,7 +20,7 @@ namespace Bank
         public form_criarConta()
         {
             InitializeComponent();
-            foreach (Agencias a in listaAgencias) select_cidade.Items.Add(a.Cidade);
+            foreach (Agencias a in listaAgencias) select_cidade_agencia.Items.Add(a.Cidade);
         }
 
         // Cancelar criacao de conta
@@ -31,14 +31,15 @@ namespace Bank
             login.ShowDialog();
             this.Visible = true;
         }
+
+        // Escolher cidade e agencia
         private void select_cidade_agencia_Leave(object sender, EventArgs e)
         {
-            Agencias a = listaAgencias.Find(Agencias => Agencias.Cidade == select_cidade.Text);
+            Agencias a = listaAgencias.Find(Agencias => Agencias.Cidade == select_cidade_agencia.Text);
             txt_agencia.Text = $"{a.Agencia}";
         }
 
-
-        // - Ignore changes -
+        // - Ignore features -
         private void select_cidade_agencia_DropDownClosed(object sender, EventArgs e) { }
         private void select_cidade_agencia_TextUpdate(object sender, EventArgs e) { }
 
