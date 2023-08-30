@@ -16,7 +16,7 @@ namespace Bank
     {
         // - Atributos -
         List<Agencias> listaAgencias = BankAcademic.ListarAgencias();
-        string[] textoDeInput = {"Nome completo", "CPF", ""};
+        string[] textoDeInput = {"Nome completo", "CPF", "Idade"};
 
         // - Metodos -
         public form_criarConta()
@@ -44,41 +44,48 @@ namespace Bank
         // Criar conta
         private void btn_criar_Click(object sender, EventArgs e)
         {
-            // Verificar
-            if (
-                // Condicoes
-                txt_nomeCompleto.Text == "" ||
-                txt_cpf.Text == "" || Validar.VerificarCPF(txt_cpf.Text) == false ||
-                txt_idade.Text == "" || Validar.VerificarIdade(txt_idade.Text) == false ||
-                txt_dataNasc.Text == "" || Validar.VerificarDataNasc(txt_dataNasc.Text) == false ||
-                txt_telefone.Text == "" || Validar.VerificarTelefone(txt_telefone.Text) == false ||
-                txt_endereco.Text == "" ||
-                select_cidade_agencia.Text == "" ||
-                txt_agencia.Text == "" || Validar.VerificarAgencia(select_cidade_agencia.Text, txt_agencia.Text) == false ||
-                txt_senha.Text == ""
-            ) MessageBox.Show("Existem campos não preenchidos ou informações inválidas.");
-            else 
+            try
             {
-                // Criar conta
-                Agencias a = listaAgencias.Find(Agencias => Agencias.Agencia == txt_agencia.Text);
-                Contas novaConta = BankAcademic.CriarConta(
-                    txt_nomeCompleto.Text,
-                    txt_cpf.Text,
-                    byte.Parse(txt_idade.Text), 
-                    Convert.ToDateTime(txt_dataNasc.Text).Date,
-                    txt_telefone.Text, 
-                    txt_endereco.Text,
-                    a,
-                    txt_senha.Text
-                );
+                // Verificar
+                if (
+                    // Condicoes
+                    txt_nomeCompleto.Text == "" ||
+                    txt_cpf.Text == "" || Validar.VerificarCPF(txt_cpf.Text) == false ||
+                    txt_idade.Text == "" || Validar.VerificarIdade(txt_idade.Text) == false ||
+                    txt_dataNasc.Text == "" || Validar.VerificarDataNasc(txt_dataNasc.Text) == false ||
+                    txt_telefone.Text == "" || Validar.VerificarTelefone(txt_telefone.Text) == false ||
+                    txt_endereco.Text == "" ||
+                    select_cidade_agencia.Text == "" ||
+                    txt_agencia.Text == "" || Validar.VerificarAgencia(select_cidade_agencia.Text, txt_agencia.Text) == false ||
+                    txt_senha.Text == ""
+                ) MessageBox.Show("Existem campos não preenchidos ou informações inválidas.");
+                else 
+                {
+                    // Criar conta
+                    Agencias a = listaAgencias.Find(Agencias => Agencias.Agencia == txt_agencia.Text);
+                    Contas novaConta = BankAcademic.CriarConta(
+                        txt_nomeCompleto.Text,
+                        txt_cpf.Text,
+                        byte.Parse(txt_idade.Text), 
+                        Convert.ToDateTime(txt_dataNasc.Text).Date,
+                        txt_telefone.Text, 
+                        txt_endereco.Text,
+                        a,
+                        txt_senha.Text
+                    );
 
-                BankAcademic.SalvarConta(novaConta);
+                    BankAcademic.SalvarConta(novaConta);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao criar sua conta.\nTente novamente mais tarde.");
             }
         }
 
         // - Ignore features -
         private void select_cidade_agencia_DropDownClosed(object sender, EventArgs e) { }
         private void select_cidade_agencia_TextUpdate(object sender, EventArgs e) { }
-
+        private void txt_dataNasc_TextChanged(object sender, EventArgs e) { }
     }
 }

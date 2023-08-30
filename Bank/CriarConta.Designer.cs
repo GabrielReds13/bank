@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_criarConta));
             this.txt_nomeCompleto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_cpf = new System.Windows.Forms.TextBox();
             this.select_cidade_agencia = new System.Windows.Forms.ComboBox();
             this.txt_idade = new System.Windows.Forms.TextBox();
             this.btn_criar = new System.Windows.Forms.PictureBox();
@@ -43,7 +42,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.txt_telefone = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.txt_endereco = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -51,7 +49,9 @@
             this.txt_agencia = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.txt_dataNasc = new System.Windows.Forms.TextBox();
+            this.txt_dataNasc = new System.Windows.Forms.MaskedTextBox();
+            this.txt_telefone = new System.Windows.Forms.MaskedTextBox();
+            this.txt_cpf = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_criar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -91,17 +91,6 @@
             this.label1.Text = "Criar conta";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txt_cpf
-            // 
-            this.txt_cpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_cpf.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cpf.Location = new System.Drawing.Point(27, 306);
-            this.txt_cpf.Multiline = true;
-            this.txt_cpf.Name = "txt_cpf";
-            this.txt_cpf.Size = new System.Drawing.Size(130, 20);
-            this.txt_cpf.TabIndex = 37;
-            this.txt_cpf.Text = "CPF";
-            // 
             // select_cidade_agencia
             // 
             this.select_cidade_agencia.BackColor = System.Drawing.Color.White;
@@ -120,7 +109,7 @@
             // 
             this.txt_idade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_idade.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idade.Location = new System.Drawing.Point(168, 305);
+            this.txt_idade.Location = new System.Drawing.Point(27, 358);
             this.txt_idade.Multiline = true;
             this.txt_idade.Name = "txt_idade";
             this.txt_idade.Size = new System.Drawing.Size(130, 20);
@@ -148,7 +137,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(168, 333);
+            this.pictureBox5.Location = new System.Drawing.Point(27, 386);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(130, 1);
             this.pictureBox5.TabIndex = 40;
@@ -201,22 +190,11 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(27, 385);
+            this.pictureBox7.Location = new System.Drawing.Point(168, 333);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(130, 1);
             this.pictureBox7.TabIndex = 46;
             this.pictureBox7.TabStop = false;
-            // 
-            // txt_telefone
-            // 
-            this.txt_telefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_telefone.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_telefone.Location = new System.Drawing.Point(27, 358);
-            this.txt_telefone.Multiline = true;
-            this.txt_telefone.Name = "txt_telefone";
-            this.txt_telefone.Size = new System.Drawing.Size(130, 20);
-            this.txt_telefone.TabIndex = 45;
-            this.txt_telefone.Text = "Telefone";
             // 
             // pictureBox9
             // 
@@ -287,14 +265,31 @@
             // 
             // txt_dataNasc
             // 
-            this.txt_dataNasc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_dataNasc.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dataNasc.Location = new System.Drawing.Point(168, 358);
-            this.txt_dataNasc.Multiline = true;
+            this.txt_dataNasc.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txt_dataNasc.Location = new System.Drawing.Point(168, 356);
+            this.txt_dataNasc.Mask = "00/00/0000";
             this.txt_dataNasc.Name = "txt_dataNasc";
-            this.txt_dataNasc.Size = new System.Drawing.Size(130, 20);
-            this.txt_dataNasc.TabIndex = 57;
-            this.txt_dataNasc.Text = "__ /__ /__";
+            this.txt_dataNasc.Size = new System.Drawing.Size(130, 22);
+            this.txt_dataNasc.TabIndex = 58;
+            this.txt_dataNasc.ValidatingType = typeof(System.DateTime);
+            // 
+            // txt_telefone
+            // 
+            this.txt_telefone.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txt_telefone.Location = new System.Drawing.Point(168, 303);
+            this.txt_telefone.Mask = "(00) 0 0000-0000";
+            this.txt_telefone.Name = "txt_telefone";
+            this.txt_telefone.Size = new System.Drawing.Size(130, 22);
+            this.txt_telefone.TabIndex = 59;
+            // 
+            // txt_cpf
+            // 
+            this.txt_cpf.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txt_cpf.Location = new System.Drawing.Point(27, 303);
+            this.txt_cpf.Mask = "000,000,000-00";
+            this.txt_cpf.Name = "txt_cpf";
+            this.txt_cpf.Size = new System.Drawing.Size(130, 22);
+            this.txt_cpf.TabIndex = 60;
             // 
             // form_criarConta
             // 
@@ -302,6 +297,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(324, 621);
+            this.Controls.Add(this.txt_cpf);
+            this.Controls.Add(this.txt_telefone);
             this.Controls.Add(this.txt_dataNasc);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.txt_agencia);
@@ -311,20 +308,19 @@
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.txt_endereco);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.txt_telefone);
             this.Controls.Add(this.btn_criar);
             this.Controls.Add(this.txt_idade);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.select_cidade_agencia);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.txt_cpf);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.txt_nomeCompleto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximumSize = new System.Drawing.Size(340, 660);
             this.MinimumSize = new System.Drawing.Size(340, 660);
             this.Name = "form_criarConta";
@@ -356,14 +352,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox txt_cpf;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.ComboBox select_cidade_agencia;
         private System.Windows.Forms.TextBox txt_idade;
         private System.Windows.Forms.PictureBox btn_criar;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.TextBox txt_telefone;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.TextBox txt_endereco;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -371,6 +365,8 @@
         private System.Windows.Forms.TextBox txt_agencia;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.TextBox txt_dataNasc;
+        private System.Windows.Forms.MaskedTextBox txt_dataNasc;
+        private System.Windows.Forms.MaskedTextBox txt_telefone;
+        private System.Windows.Forms.MaskedTextBox txt_cpf;
     }
 }

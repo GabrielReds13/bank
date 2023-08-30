@@ -121,7 +121,7 @@
   <data name="btn_criar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIEAAAAkCAYAAACucVkNAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAa9JREFUeF7tl1GtAjEQRZ8EHIAEJCABCUjAATgAB0hAAhKQgAQk9L2zyZBmc/P4
+        EAAACxABrSO9dQAAAa9JREFUeF7tl1GtAjEQRZ8EHIAEJCABCUjAATgAB0hAAhKQgAQk9L2zyZBmc/P4
         7t7b5ITd03Z/ZjpTfv5GC/ZIGbyQMnghZfBCyuCFlMELKYMXUgYvpAxeSBm8kDJ4IWXwQkobtttt2+12
         bbVayXkTpBwSAnk6ndr7/W4Mfm+3W9tsNnI9PB6Pae16vZbzJkg5HCTA6/WaAkrw7/f75/18Pss9QBU4
         HA6pBEvgeDxOASf4vSfA9cypJzGqWuAqWaoS8F6VpNbiqSa8U1mAb9V3F4CUw1FlnR6v5qEqA4Nn3Lwd
@@ -134,7 +134,7 @@
   <data name="btn_cancelar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIEAAAAkCAYAAACucVkNAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAiZJREFUeF7tlg1NA0EQRisBByABCUjAATgAB+AAHIADcIAEJCABCWVer6+ZNG3S
+        EAAACxABrSO9dQAAAiZJREFUeF7tlg1NA0EQRisBByABCUjAATgAB+AAHIADcIAEJCABCWVer6+ZNG3S
         EKBL+71kbn9vdnvz7WxnxTx29DY9wtESEYSIIEQEoYgIQkQQIoJQRAQhIggRQSgighARfIeLpR0Kw4vg
         pOyu7LOMfVI+lZ2V7Qv28TFVD4KhRYAA+NgG/6W178v2RUTwh9yWsTeC37lelkC9C4UsgXhA0TyUmUnI
         KnJe9lZGP9bfvSrzHXxclol9wHx8OPe9DL/AleH6zMH/iLDv6TEgBsiPugmCQ7AfyxSDWcL3CQxzqGME
@@ -149,7 +149,7 @@
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVQAAAFjCAYAAABi7fOgAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF6k3eW7Lrl2nvv5wRQzM1ObOYY2MzMzO3HMzMzMzG4zYxzH2dvb9h82
+        EAAACxABrSO9dQAA/7JJREFUeF6k3eW7Lrl2nvv5wRQzM1ObOYY2MzMzO3HMzMzMzG4zYxzH2dvb9h82
         z/q9J/e6ntauubqPz4dxSaVSqQTPuDVU71zdd1/xFV9x/z/+x/+4/2//7b/df8mXfMn9537u595/wid8
         wv2Hf/iH37/v+77v/Tu8wzvcv/mbv/n9m7zJm9y/6Zu+6c3e4i3e4v4t3/It79/2bd/2/h3f8R3v3/7t
         3/7+bd7mbW5l6sq/13u91/1HfdRH3X/xF3/xre0v+qIvuv/SL/3S+8/5nM+5/9iP/dj7D/iAD7h/l3d5
