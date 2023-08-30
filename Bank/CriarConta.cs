@@ -58,7 +58,7 @@ namespace Bank
                     select_cidade_agencia.Text == "" ||
                     txt_agencia.Text == "" || Validar.VerificarAgencia(select_cidade_agencia.Text, txt_agencia.Text) == false ||
                     txt_senha.Text == ""
-                ) MessageBox.Show("Existem campos não preenchidos ou informações inválidas.");
+                ) MessageBox.Show("Verifique se as informações estão corretas.");
                 else 
                 {
                     // Criar conta
