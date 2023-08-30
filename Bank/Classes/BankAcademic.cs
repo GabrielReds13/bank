@@ -35,7 +35,7 @@ namespace Bank.Classes
                 MessageBox.Show("Ocorreu um erro ao criar a conta.\n Tente novamente.");
             }
         }
-        public static string[] ListarAgencias()
+        public static List<Agencias> ListarAgencias()
         {
             // Buscar json
             string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\{arquivos[1]}";
@@ -46,7 +46,7 @@ namespace Bank.Classes
             string[] lista = new string[agencias.Count];
             for (int i = 0; i < agencias.Count; i++) lista[i] = $"{agencias[i].Cidade}, Agência {agencias[i].Agencia}";
 
-            return lista;
+            return agencias;
         }
     }
 }

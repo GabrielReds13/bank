@@ -203,7 +203,6 @@
             this.MinimumSize = new System.Drawing.Size(340, 660);
             this.Name = "form_recuperarSenha";
             this.Text = "Bank - Recuperar Senha";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.btn_cancelar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_alterar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

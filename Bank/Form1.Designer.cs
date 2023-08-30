@@ -196,7 +196,6 @@
             this.MinimumSize = new System.Drawing.Size(340, 660);
             this.Name = "form_login";
             this.Text = "Bank - Login";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

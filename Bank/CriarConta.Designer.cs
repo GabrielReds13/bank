@@ -32,7 +32,7 @@
             this.txt_nomeCompleto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_cpf = new System.Windows.Forms.TextBox();
-            this.select_cidade_agencia = new System.Windows.Forms.ComboBox();
+            this.select_cidade = new System.Windows.Forms.ComboBox();
             this.txt_idade = new System.Windows.Forms.TextBox();
             this.btn_criar = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -48,6 +48,8 @@
             this.txt_endereco = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.txt_senha = new System.Windows.Forms.TextBox();
+            this.txt_agencia = new System.Windows.Forms.TextBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_criar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -59,6 +61,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_nomeCompleto
@@ -96,17 +99,19 @@
             this.txt_cpf.TabIndex = 37;
             this.txt_cpf.Text = "CPF";
             // 
-            // select_cidade_agencia
+            // select_cidade
             // 
-            this.select_cidade_agencia.BackColor = System.Drawing.Color.White;
-            this.select_cidade_agencia.Enabled = false;
-            this.select_cidade_agencia.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold);
-            this.select_cidade_agencia.FormattingEnabled = true;
-            this.select_cidade_agencia.Location = new System.Drawing.Point(27, 458);
-            this.select_cidade_agencia.Name = "select_cidade_agencia";
-            this.select_cidade_agencia.Size = new System.Drawing.Size(270, 24);
-            this.select_cidade_agencia.TabIndex = 41;
-            this.select_cidade_agencia.Text = "Cidade e Agência";
+            this.select_cidade.BackColor = System.Drawing.Color.White;
+            this.select_cidade.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold);
+            this.select_cidade.FormattingEnabled = true;
+            this.select_cidade.Location = new System.Drawing.Point(27, 458);
+            this.select_cidade.Name = "select_cidade";
+            this.select_cidade.Size = new System.Drawing.Size(188, 24);
+            this.select_cidade.TabIndex = 41;
+            this.select_cidade.Text = "Cidade";
+            this.select_cidade.TextUpdate += new System.EventHandler(this.select_cidade_agencia_TextUpdate);
+            this.select_cidade.DropDownClosed += new System.EventHandler(this.select_cidade_agencia_DropDownClosed);
+            this.select_cidade.Leave += new System.EventHandler(this.select_cidade_agencia_Leave);
             // 
             // txt_idade
             // 
@@ -122,7 +127,7 @@
             // btn_criar
             // 
             this.btn_criar.BackColor = System.Drawing.Color.White;
-            this.btn_criar.BackgroundImage = global::Bank.Properties.Resources.Criar_Button;
+            this.btn_criar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_criar.BackgroundImage")));
             this.btn_criar.Location = new System.Drawing.Point(168, 561);
             this.btn_criar.Name = "btn_criar";
             this.btn_criar.Size = new System.Drawing.Size(129, 36);
@@ -133,7 +138,7 @@
             // 
             this.pictureBox6.Location = new System.Drawing.Point(27, 489);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(270, 1);
+            this.pictureBox6.Size = new System.Drawing.Size(188, 1);
             this.pictureBox6.TabIndex = 42;
             this.pictureBox6.TabStop = false;
             // 
@@ -156,7 +161,7 @@
             // btn_cancelar
             // 
             this.btn_cancelar.BackColor = System.Drawing.Color.White;
-            this.btn_cancelar.BackgroundImage = global::Bank.Properties.Resources.Cancelar_Button;
+            this.btn_cancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_cancelar.BackgroundImage")));
             this.btn_cancelar.Location = new System.Drawing.Point(27, 561);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(129, 36);
@@ -183,7 +188,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Bank.Properties.Resources.Background_Wallpaper_New_Account;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(-8, -17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(340, 342);
@@ -247,12 +252,35 @@
             this.txt_senha.TabIndex = 51;
             this.txt_senha.Text = "Senha";
             // 
+            // txt_agencia
+            // 
+            this.txt_agencia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_agencia.Enabled = false;
+            this.txt_agencia.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_agencia.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_agencia.Location = new System.Drawing.Point(228, 461);
+            this.txt_agencia.Multiline = true;
+            this.txt_agencia.Name = "txt_agencia";
+            this.txt_agencia.Size = new System.Drawing.Size(70, 20);
+            this.txt_agencia.TabIndex = 54;
+            this.txt_agencia.Text = "Agência";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(227, 489);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(70, 1);
+            this.pictureBox8.TabIndex = 53;
+            this.pictureBox8.TabStop = false;
+            // 
             // form_criarConta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(324, 621);
+            this.Controls.Add(this.txt_agencia);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.pictureBox9);
@@ -262,7 +290,7 @@
             this.Controls.Add(this.btn_criar);
             this.Controls.Add(this.txt_idade);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.select_cidade_agencia);
+            this.Controls.Add(this.select_cidade);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txt_cpf);
@@ -272,12 +300,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(340, 660);
             this.MinimumSize = new System.Drawing.Size(340, 660);
             this.Name = "form_criarConta";
             this.Text = "CriarConta";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)(this.btn_criar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -289,6 +315,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,7 +333,7 @@
         private System.Windows.Forms.TextBox txt_cpf;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.ComboBox select_cidade_agencia;
+        private System.Windows.Forms.ComboBox select_cidade;
         private System.Windows.Forms.TextBox txt_idade;
         private System.Windows.Forms.PictureBox btn_criar;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -315,5 +342,7 @@
         private System.Windows.Forms.TextBox txt_endereco;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.TextBox txt_senha;
+        private System.Windows.Forms.TextBox txt_agencia;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

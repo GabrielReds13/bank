@@ -13,11 +13,14 @@ namespace Bank
 {
     public partial class form_criarConta : Form
     {
+        // - Atributos -
+        List<Agencias> listaAgencias = BankAcademic.ListarAgencias();
+
         // - Metodos -
         public form_criarConta()
         {
             InitializeComponent();
-            select_cidade_agencia.Items.AddRange(BankAcademic.ListarAgencias().ToArray());
+            foreach (Agencias a in listaAgencias) select_cidade.Items.Add(a.Cidade);
         }
 
         // Cancelar criacao de conta
@@ -28,5 +31,16 @@ namespace Bank
             login.ShowDialog();
             this.Visible = true;
         }
+        private void select_cidade_agencia_Leave(object sender, EventArgs e)
+        {
+            Agencias a = listaAgencias.Find(Agencias => Agencias.Cidade == select_cidade.Text);
+            txt_agencia.Text = $"{a.Agencia}";
+        }
+
+
+        // - Ignore changes -
+        private void select_cidade_agencia_DropDownClosed(object sender, EventArgs e) { }
+        private void select_cidade_agencia_TextUpdate(object sender, EventArgs e) { }
+
     }
 }
