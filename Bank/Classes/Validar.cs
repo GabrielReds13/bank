@@ -139,5 +139,58 @@ namespace Bank.Classes
                 return false;
             }
         }
+
+        public static bool VerificarDataNasc(string dataNascimento)
+        {
+            try
+            {
+                // Formatar
+                string formDataNasc = dataNascimento.Replace("_", "").Replace("/", "");
+                string[] splitDataNasc = $"{dataNascimento.Replace("_", "")}".Split(char.Parse("/"));
+                char[] dataNascChar = formDataNasc.ToCharArray();
+                DateTime data = DateTime.Now.Date;
+                int digitosValidos = 0;
+
+                // Verificar
+                foreach (char caractere in dataNascChar)
+                {
+                    if (caractere >= 48 && caractere <= 57) digitosValidos++;
+                    else { }
+                }
+
+                // Validar
+                if (digitosValidos == dataNascChar.Length && splitDataNasc.Length == 3)
+                {
+                    // Verificar formato de data
+                    if (splitDataNasc[0].ToCharArray().Length == 2 && splitDataNasc[1].ToCharArray().Length == 2 && splitDataNasc[2].ToCharArray().Length == 4)
+                    {
+                        // Verificar data 1
+                        if (
+                            int.Parse(splitDataNasc[0]) > 0 && int.Parse(splitDataNasc[0]) <= 31 &&
+                            int.Parse(splitDataNasc[1]) > 0 && int.Parse(splitDataNasc[1]) <= 12 &&
+                            int.Parse(splitDataNasc[2]) > 1950 && int.Parse(splitDataNasc[2]) <= int.Parse($"{data.Year + 1}")
+                        ) return true;
+                        else return false;
+                    }    
+                    else if (splitDataNasc[0].ToCharArray().Length == 4 && splitDataNasc[1].ToCharArray().Length == 2 && splitDataNasc[2].ToCharArray().Length == 2)
+                    {
+                        // Verificar data 2
+                        if (
+                            int.Parse(splitDataNasc[2]) > 0 && int.Parse(splitDataNasc[0]) <= 31 &&
+                            int.Parse(splitDataNasc[1]) > 0 && int.Parse(splitDataNasc[1]) <= 12 &&
+                            int.Parse(splitDataNasc[0]) > 1950 && int.Parse(splitDataNasc[2]) <= int.Parse($"{data.Year + 1}")
+                        ) return true;
+                        else return false;
+                    }
+                    else return false;
+                }
+                else return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao verificar credências.");
+                return false;
+            }
+        }
     }
 }

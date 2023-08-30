@@ -41,6 +41,7 @@ namespace Bank.Classes
             string titular,
             string cpf,
             byte idade,
+            DateTime dataNascimento,
             string telefone,
             string endereco,
             Agencias agencia,
@@ -57,6 +58,7 @@ namespace Bank.Classes
                 titular, 
                 cpf, 
                 idade, 
+                dataNascimento,
                 telefone, 
                 endereco,
 

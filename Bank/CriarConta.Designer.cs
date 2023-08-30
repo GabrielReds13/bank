@@ -50,6 +50,8 @@
             this.txt_senha = new System.Windows.Forms.TextBox();
             this.txt_agencia = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.txt_dataNasc = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.btn_criar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -62,6 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_nomeCompleto
@@ -200,7 +203,7 @@
             // 
             this.pictureBox7.Location = new System.Drawing.Point(27, 385);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(270, 1);
+            this.pictureBox7.Size = new System.Drawing.Size(130, 1);
             this.pictureBox7.TabIndex = 46;
             this.pictureBox7.TabStop = false;
             // 
@@ -211,7 +214,7 @@
             this.txt_telefone.Location = new System.Drawing.Point(27, 358);
             this.txt_telefone.Multiline = true;
             this.txt_telefone.Name = "txt_telefone";
-            this.txt_telefone.Size = new System.Drawing.Size(270, 20);
+            this.txt_telefone.Size = new System.Drawing.Size(130, 20);
             this.txt_telefone.TabIndex = 45;
             this.txt_telefone.Text = "Telefone";
             // 
@@ -274,12 +277,33 @@
             this.pictureBox8.TabIndex = 53;
             this.pictureBox8.TabStop = false;
             // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Location = new System.Drawing.Point(168, 385);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(130, 1);
+            this.pictureBox11.TabIndex = 56;
+            this.pictureBox11.TabStop = false;
+            // 
+            // txt_dataNasc
+            // 
+            this.txt_dataNasc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_dataNasc.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dataNasc.Location = new System.Drawing.Point(168, 358);
+            this.txt_dataNasc.Multiline = true;
+            this.txt_dataNasc.Name = "txt_dataNasc";
+            this.txt_dataNasc.Size = new System.Drawing.Size(130, 20);
+            this.txt_dataNasc.TabIndex = 57;
+            this.txt_dataNasc.Text = "__ /__ /__";
+            // 
             // form_criarConta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(324, 621);
+            this.Controls.Add(this.txt_dataNasc);
+            this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.txt_agencia);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox10);
@@ -317,6 +341,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +370,7 @@
         private System.Windows.Forms.TextBox txt_senha;
         private System.Windows.Forms.TextBox txt_agencia;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.TextBox txt_dataNasc;
     }
 }

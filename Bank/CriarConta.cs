@@ -16,6 +16,7 @@ namespace Bank
     {
         // - Atributos -
         List<Agencias> listaAgencias = BankAcademic.ListarAgencias();
+        string[] textoDeInput = {"Nome completo", "CPF", ""};
 
         // - Metodos -
         public form_criarConta()
@@ -48,7 +49,8 @@ namespace Bank
                 // Condicoes
                 txt_nomeCompleto.Text == "" ||
                 txt_cpf.Text == "" || Validar.VerificarCPF(txt_cpf.Text) == false ||
-                txt_idade.Text == null || Validar.VerificarIdade(txt_idade.Text) == false ||
+                txt_idade.Text == "" || Validar.VerificarIdade(txt_idade.Text) == false ||
+                txt_dataNasc.Text == "" || Validar.VerificarDataNasc(txt_dataNasc.Text) == false ||
                 txt_telefone.Text == "" || Validar.VerificarTelefone(txt_telefone.Text) == false ||
                 txt_endereco.Text == "" ||
                 select_cidade_agencia.Text == "" ||
@@ -63,6 +65,7 @@ namespace Bank
                     txt_nomeCompleto.Text,
                     txt_cpf.Text,
                     byte.Parse(txt_idade.Text), 
+                    Convert.ToDateTime(txt_dataNasc.Text).Date,
                     txt_telefone.Text, 
                     txt_endereco.Text,
                     a,
