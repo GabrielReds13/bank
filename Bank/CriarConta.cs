@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bank.Classes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Bank
 {
@@ -37,6 +38,39 @@ namespace Bank
         {
             Agencias a = listaAgencias.Find(Agencias => Agencias.Cidade == select_cidade_agencia.Text);
             txt_agencia.Text = $"{a.Agencia}";
+        }
+
+        // Criar conta
+        private void btn_criar_Click(object sender, EventArgs e)
+        {
+            // Verificar
+            if (
+                // Condicoes
+                txt_nomeCompleto.Text == "" ||
+                txt_cpf.Text == "" || Validar.VerificarCPF(txt_cpf.Text) == false ||
+                txt_idade.Text == null || Validar.VerificarIdade(txt_idade.Text) == false ||
+                txt_telefone.Text == "" || Validar.VerificarTelefone(txt_telefone.Text) == false ||
+                txt_endereco.Text == "" ||
+                select_cidade_agencia.Text == "" ||
+                txt_agencia.Text == "" || Validar.VerificarAgencia(select_cidade_agencia.Text, txt_agencia.Text) == false ||
+                txt_senha.Text == ""
+            ) MessageBox.Show("Existem campos não preenchidos ou informações inválidas.");
+            else 
+            {
+                // Criar conta
+                Agencias a = listaAgencias.Find(Agencias => Agencias.Agencia == txt_agencia.Text);
+                Contas novaConta = BankAcademic.CriarConta(
+                    txt_nomeCompleto.Text,
+                    txt_cpf.Text,
+                    byte.Parse(txt_idade.Text), 
+                    txt_telefone.Text, 
+                    txt_endereco.Text,
+                    a,
+                    txt_senha.Text
+                );
+
+                BankAcademic.SalvarConta(novaConta);
+            }
         }
 
         // - Ignore features -

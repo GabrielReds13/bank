@@ -15,7 +15,7 @@ namespace Bank.Classes
         private static string[] arquivos = {"Contas.json", "Agencias.json", "Historico.json"};
 
         // - Metodos -
-        public static void CriarConta(Contas conta)
+        public static void SalvarConta(Contas conta)
         {
             try 
             {
@@ -35,6 +35,42 @@ namespace Bank.Classes
                 MessageBox.Show("Ocorreu um erro ao criar a conta.\n Tente novamente.");
             }
         }
+
+        public static Contas CriarConta(
+            // Dados
+            string titular,
+            string cpf,
+            byte idade,
+            string telefone,
+            string endereco,
+            Agencias agencia,
+            string senha
+       )
+        {
+            // Gerar conta
+            Random gerarNum = new Random();
+            int numConta = gerarNum.Next(10000, 99999);
+
+            // Criar instancia
+            Contas novaConta = new Contas(
+                // Pessoa
+                titular, 
+                cpf, 
+                idade, 
+                telefone, 
+                endereco,
+
+                // Conta
+                numConta, 
+                agencia, 
+                0,
+                5000,
+                senha
+            );
+            MessageBox.Show($"Parabéns! O número da sua conta é {numConta}.");
+            return novaConta;
+        }
+
         public static List<Agencias> ListarAgencias()
         {
             // Buscar json

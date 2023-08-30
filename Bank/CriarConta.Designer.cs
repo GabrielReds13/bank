@@ -133,6 +133,7 @@
             this.btn_criar.Size = new System.Drawing.Size(129, 36);
             this.btn_criar.TabIndex = 44;
             this.btn_criar.TabStop = false;
+            this.btn_criar.Click += new System.EventHandler(this.btn_criar_Click);
             // 
             // pictureBox6
             // 

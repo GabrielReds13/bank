@@ -57,6 +57,7 @@
     <Compile Include="Classes\BankAcademic.cs" />
     <Compile Include="Classes\Contas.cs" />
     <Compile Include="Classes\Pessoa.cs" />
+    <Compile Include="Classes\Validar.cs" />
     <Compile Include="CriarConta.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -14,5 +14,21 @@ namespace Bank.Classes
         public byte Idade { get; set; }
         public string Telefone { get; set; }
         public string Endereco { get; set; }
+
+        // - Metodo Construtor -
+        public Pessoa(
+            string titular,
+            string cpf,
+            byte idade,
+            string telefone,
+            string endereco
+        ) 
+        {
+            this.Titular = titular;
+            this.Cpf = cpf;
+            this.Idade = idade;
+            this.Telefone = telefone;
+            this.Endereco = endereco;
+        }
     }
 }
