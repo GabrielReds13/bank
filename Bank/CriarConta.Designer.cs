@@ -320,7 +320,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximumSize = new System.Drawing.Size(340, 660);
             this.MinimumSize = new System.Drawing.Size(340, 660);
             this.Name = "form_criarConta";
