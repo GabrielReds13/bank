@@ -49,7 +49,7 @@ namespace Bank
                 // Verificar
                 if (
                     // Condicoes
-                    txt_nomeCompleto.Text == "" ||
+                    txt_nomeCompleto.Text == "" || Validar.VerificarNome(txt_nomeCompleto.Text) ||
                     txt_cpf.Text == "" || Validar.VerificarCPF(txt_cpf.Text) == false ||
                     txt_idade.Text == "" || Validar.VerificarIdade(txt_idade.Text) == false ||
                     txt_dataNasc.Text == "" || Validar.VerificarDataNasc(txt_dataNasc.Text) == false ||

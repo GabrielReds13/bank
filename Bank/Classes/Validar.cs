@@ -192,5 +192,36 @@ namespace Bank.Classes
                 return false;
             }
         }
+
+        public static bool VerificarNome(string nome)
+        {
+            try
+            {
+                // Formatar
+                nome = nome.Replace(" ", "");
+                char[] nomeChar = nome.ToCharArray();
+                int digitosValidos = 0;
+
+                // Verificar
+                foreach (char caractere in nomeChar)
+                {
+                    if (caractere >= 65 && caractere <= 90 || caractere >= 97 && caractere <= 122) digitosValidos++;
+                    else { }
+                }
+
+                // Validar
+                if (digitosValidos == nome.Length) return true;
+                else
+                {
+                    MessageBox.Show($"Nome pode possuir apenas letras.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao verificar nome.");
+                return false;
+            }
+        }
     }
 }
