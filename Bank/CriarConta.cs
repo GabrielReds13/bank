@@ -31,7 +31,7 @@ namespace Bank
             this.Visible = false;
             form_login login = new form_login();
             login.ShowDialog();
-            this.Visible = true;
+            this.Close();
         }
 
         // Escolher cidade e agencia
@@ -49,7 +49,7 @@ namespace Bank
                 // Verificar
                 if (
                     // Condicoes
-                    txt_nomeCompleto.Text == "" || txt_nomeCompleto.Text == textoDeInput[0] || Validar.VerificarNome(txt_nomeCompleto.Text) ||
+                    txt_nomeCompleto.Text == "" || txt_nomeCompleto.Text == textoDeInput[0] || Validar.VerificarNome(txt_nomeCompleto.Text) == false ||
                     txt_cpf.Text == "" || txt_cpf.Text == textoDeInput[1] || Validar.VerificarCPF(txt_cpf.Text) == false ||
                     txt_idade.Text == "" || txt_idade.Text == textoDeInput[3] || Validar.VerificarIdade(txt_idade.Text) == false ||
                     txt_dataNasc.Text == "" || txt_dataNasc.Text == textoDeInput[4] || Validar.VerificarDataNasc(txt_dataNasc.Text) == false ||

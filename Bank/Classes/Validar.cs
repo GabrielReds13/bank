@@ -136,7 +136,6 @@ namespace Bank.Classes
                 foreach (char caractere in idadeChar)
                 {
                     if (caractere >= 48 && caractere <= 57) digitosValidos++;
-                    else { }
                 }
 
                 // Validar
@@ -206,7 +205,6 @@ namespace Bank.Classes
                 foreach (char caractere in nomeChar)
                 {
                     if (caractere >= 65 && caractere <= 90 || caractere >= 97 && caractere <= 122) digitosValidos++;
-                    else { }
                 }
 
                 // Validar
@@ -220,6 +218,45 @@ namespace Bank.Classes
             catch (Exception ex)
             {
                 MessageBox.Show($"Erro ao verificar nome.");
+                return false;
+            }
+        }
+
+        public static bool VerificarLogin(string numConta)
+        {
+            try
+            {
+                // Formatar
+                char[] contaChar = numConta.ToCharArray();
+                int digitosValidos = 0;
+
+                // Verificar 1
+                if(contaChar.Length == 5) 
+                { 
+                    // Verificar 2
+                    foreach (char caractere in contaChar)
+                    {
+                        if (caractere >= 48 && caractere <= 57) digitosValidos++;
+                    }
+
+                    // Validar
+                    if (digitosValidos == contaChar.Length) return true;
+                    else
+                    {
+                        MessageBox.Show($"Conta pode possuir apenas números.");
+                        return false;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show($"Conta inválida.");
+                    return false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro. Tente novamente mais tarde.");
                 return false;
             }
         }
