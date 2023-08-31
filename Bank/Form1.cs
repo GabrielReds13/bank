@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bank.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +25,7 @@ namespace Bank
             this.Visible = false;
             form_recuperarSenha recuperarSenha = new form_recuperarSenha();
             recuperarSenha.ShowDialog();
-            this.Visible = true;
+            this.Close();
         }
 
         // Criar conta
@@ -33,7 +34,30 @@ namespace Bank
             this.Visible = false;
             form_criarConta criarConta = new form_criarConta();
             criarConta.ShowDialog();
-            this.Visible = true;
+            this.Close();
+        }
+
+        // Login
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            //Verificar
+            if (txt_conta.Text == "" || txt_senha.Text == "") MessageBox.Show("Preencha os campos vazios.");
+            else
+            {
+                // Verificar conta
+                if(Validar.VerificarLogin(Convert.ToString(txt_conta.Text)) == true)
+                {
+                    // Validar
+                    Contas a = BankAcademic.Login(int.Parse(txt_conta.Text), txt_senha.Text);
+
+                    if (a != null)
+                    {
+                        // Home
+                        Home home = new Home(a);
+                    }
+                    else MessageBox.Show("Verifique suas informações de login.");
+                }
+            }
         }
     }
 }

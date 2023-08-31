@@ -32,7 +32,7 @@ namespace Bank
             this.Visible = false;
             form_login login = new form_login();
             login.ShowDialog();
-            this.Visible = true;
+            this.Close();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Bank
     {
         // - Atributos -
         List<Agencias> listaAgencias = BankAcademic.ListarAgencias();
-        string[] textoDeInput = {"Nome completo", "CPF", "Idade"};
+        string[] textoDeInput = {"Nome completo", "___.___.___-__", "(__) _ ____-____", "Idade", "__/__/____", "Endereço", "Cidade", "Agência", "Senha"};
 
         // - Metodos -
         public form_criarConta()
@@ -31,7 +31,7 @@ namespace Bank
             this.Visible = false;
             form_login login = new form_login();
             login.ShowDialog();
-            this.Visible = true;
+            this.Close();
         }
 
         // Escolher cidade e agencia
@@ -49,15 +49,15 @@ namespace Bank
                 // Verificar
                 if (
                     // Condicoes
-                    txt_nomeCompleto.Text == "" ||
-                    txt_cpf.Text == "" || Validar.VerificarCPF(txt_cpf.Text) == false ||
-                    txt_idade.Text == "" || Validar.VerificarIdade(txt_idade.Text) == false ||
-                    txt_dataNasc.Text == "" || Validar.VerificarDataNasc(txt_dataNasc.Text) == false ||
-                    txt_telefone.Text == "" || Validar.VerificarTelefone(txt_telefone.Text) == false ||
-                    txt_endereco.Text == "" ||
-                    select_cidade_agencia.Text == "" ||
-                    txt_agencia.Text == "" || Validar.VerificarAgencia(select_cidade_agencia.Text, txt_agencia.Text) == false ||
-                    txt_senha.Text == ""
+                    txt_nomeCompleto.Text == "" || txt_nomeCompleto.Text == textoDeInput[0] || Validar.VerificarNome(txt_nomeCompleto.Text) == false ||
+                    txt_cpf.Text == "" || txt_cpf.Text == textoDeInput[1] || Validar.VerificarCPF(txt_cpf.Text) == false ||
+                    txt_idade.Text == "" || txt_idade.Text == textoDeInput[3] || Validar.VerificarIdade(txt_idade.Text) == false ||
+                    txt_dataNasc.Text == "" || txt_dataNasc.Text == textoDeInput[4] || Validar.VerificarDataNasc(txt_dataNasc.Text) == false ||
+                    txt_telefone.Text == "" || txt_telefone.Text == textoDeInput[2] || Validar.VerificarTelefone(txt_telefone.Text) == false ||
+                    txt_endereco.Text == "" ||txt_endereco.Text == textoDeInput[5] ||
+                    select_cidade_agencia.Text == "" ||select_cidade_agencia.Text == textoDeInput[6] ||
+                    txt_agencia.Text == "" || txt_agencia.Text == textoDeInput[7] || Validar.VerificarAgencia(select_cidade_agencia.Text, txt_agencia.Text) == false ||
+                    txt_senha.Text == "" || txt_senha.Text == textoDeInput[8]
                 ) MessageBox.Show("Verifique se as informações estão corretas.");
                 else 
                 {

@@ -46,11 +46,26 @@ namespace Bank.Classes
             string endereco,
             Agencias agencia,
             string senha
-       )
+        )
         {
             // Gerar conta
             Random gerarNum = new Random();
             int numConta = gerarNum.Next(10000, 99999);
+
+            // * Verificar
+            // Buscar json
+            string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\{arquivos[0]}";
+            var buscarArquivo = File.ReadAllText(arquivo);
+            var contas = JsonConvert.DeserializeObject<List<Contas>>(buscarArquivo);
+
+            Contas a = contas.Find(Contas => Contas.Conta == numConta);
+            
+            // Verificar numero de conta existente
+            while(true)
+            {
+                if (a != null) numConta = gerarNum.Next(10000, 99999);
+                else break;
+            }
 
             // Criar instancia
             Contas novaConta = new Contas(
@@ -79,12 +94,36 @@ namespace Bank.Classes
             string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\{arquivos[1]}";
             var buscarArquivo = File.ReadAllText(arquivo);
             
-            // Criar lista
+            // Converter lista
             var agencias = JsonConvert.DeserializeObject<List<Agencias>>(buscarArquivo);
-            string[] lista = new string[agencias.Count];
-            for (int i = 0; i < agencias.Count; i++) lista[i] = $"{agencias[i].Cidade}, Agência {agencias[i].Agencia}";
-
             return agencias;
+        }
+
+        public static Contas Login(int numConta, string senha)
+        {
+            try
+            {
+                // * Verificar
+                // Buscar json
+                string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\{arquivos[0]}";
+                var buscarArquivo = File.ReadAllText(arquivo);
+                var contas = JsonConvert.DeserializeObject<List<Contas>>(buscarArquivo);
+
+                Contas a = contas.Find(Contas => Contas.Conta == numConta);
+
+                // Verificar login
+                if (senha == a.Senha) return a;
+                else
+                {
+                    MessageBox.Show($"Conta ou senha incorretos.");
+                    return null;
+                }
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("Erro ao fazer o login.");
+                return null;
+            }
         }
     }
 }

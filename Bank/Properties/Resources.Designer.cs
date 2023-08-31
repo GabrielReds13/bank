@@ -123,6 +123,26 @@ namespace Bank.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Depositar_Button {
+            get {
+                object obj = ResourceManager.GetObject("Depositar-Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Extrato_Button {
+            get {
+                object obj = ResourceManager.GetObject("Extrato-Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_Button {
             get {
                 object obj = ResourceManager.GetObject("Login-Button", resourceCulture);
@@ -146,6 +166,46 @@ namespace Bank.Properties {
         internal static System.Drawing.Bitmap Logo_SmallSize_White {
             get {
                 object obj = ResourceManager.GetObject("Logo-SmallSize-White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logout_Button {
+            get {
+                object obj = ResourceManager.GetObject("Logout-Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pix_Button {
+            get {
+                object obj = ResourceManager.GetObject("Pix-Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sacar_Button {
+            get {
+                object obj = ResourceManager.GetObject("Sacar-Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Transferir_Button {
+            get {
+                object obj = ResourceManager.GetObject("Transferir-Button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
