@@ -22,6 +22,7 @@ namespace Bank.Classes
             string titular,
             string cpf,
             byte idade,
+            DateTime dataNascimento,
             string telefone,
             string endereco,
 
@@ -37,6 +38,7 @@ namespace Bank.Classes
             titular, 
             cpf,
             idade, 
+            dataNascimento,
             telefone, 
             endereco
         )
@@ -45,6 +47,7 @@ namespace Bank.Classes
             this.Titular = titular;
             this.Cpf = cpf;
             this.Idade = idade;
+            this.dataNascimento = dataNascimento;
             this.Telefone = telefone;
             this.Endereco = endereco;
 

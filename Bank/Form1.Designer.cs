@@ -122,7 +122,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.BackgroundImage = global::Bank.Properties.Resources.Logo_BigSize_Black;
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.Location = new System.Drawing.Point(116, 297);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(95, 52);
@@ -147,12 +147,13 @@
             // 
             // btn_login
             // 
-            this.btn_login.BackgroundImage = global::Bank.Properties.Resources.Login_Button;
+            this.btn_login.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_login.BackgroundImage")));
             this.btn_login.Location = new System.Drawing.Point(29, 522);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(270, 36);
             this.btn_login.TabIndex = 15;
             this.btn_login.TabStop = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // pictureBox2
             // 
@@ -165,7 +166,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Bank.Properties.Resources.Background_Wallpaper_Login;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(-7, -28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(340, 424);
