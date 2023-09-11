@@ -125,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App-Icon.ico" />
+    <None Include="Resources\Transferir-Button1.png" />
     <None Include="Resources\Transferir-Button.png" />
     <None Include="Resources\Pix-Button.png" />
     <None Include="Resources\Sacar-Button.png" />

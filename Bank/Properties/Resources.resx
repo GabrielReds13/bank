@@ -124,6 +124,9 @@
   <data name="Logout-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logout-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Transferir-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Transferir-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Depositar-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Depositar-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,14 +148,14 @@
   <data name="Logo-BigSize-Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo-BigSize-Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Background-Wallpaper-New-Account" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background-Wallpaper-New-Account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Login-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo-SmallSize-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo-SmallSize-White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background-Wallpaper-New-Account" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background-Wallpaper-New-Account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sacar-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sacar-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,7 +163,7 @@
   <data name="Alterar-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Alterar-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Transferir-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Transferir-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Transferir-Button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Transferir-Button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

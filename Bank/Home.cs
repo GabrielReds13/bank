@@ -23,8 +23,11 @@ namespace Bank
             // Pegar usuario 
             contaLogada = conta;
 
+            // Variaveis
+            string[] nome = contaLogada.Titular.Split(char.Parse(" "));
+
             // Setar forms
-            lb_titular.Text = $"{contaLogada.Titular.Split(char.Parse(" "))[0]} {contaLogada.Titular.Split(char.Parse(" "))[1]}";
+            lb_titular.Text = $"Olá {nome[0]}";
             lb_saldo.Text = contaLogada.Saldo.ToString("C2");
             lb_limite.Text = contaLogada.Limite.ToString("C2");
         }

@@ -102,9 +102,8 @@
             this.txt_senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_senha.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_senha.Location = new System.Drawing.Point(29, 434);
-            this.txt_senha.Multiline = true;
             this.txt_senha.Name = "txt_senha";
-            this.txt_senha.Size = new System.Drawing.Size(270, 20);
+            this.txt_senha.Size = new System.Drawing.Size(270, 15);
             this.txt_senha.TabIndex = 18;
             this.txt_senha.Text = "Senha";
             // 

@@ -28,7 +28,7 @@ namespace Bank.Classes
                 contas.Add(conta);
 
                 // Salvar conta
-                var contasJson = JsonConvert.SerializeObject(contas);
+                var contasJson = JsonConvert.SerializeObject(contas, Formatting.Indented);
                 File.WriteAllText(arquivo, contasJson);
             } catch (Exception ex) 
             { 

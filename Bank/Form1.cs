@@ -53,7 +53,10 @@ namespace Bank
                     if (a != null)
                     {
                         // Home
-                        Home home = new Home(a);
+                        this.Visible = false; 
+                        Home home = new Home(a );
+                        home.ShowDialog();
+                        this.Close();
                     }
                     else MessageBox.Show("Verifique suas informações de login.");
                 }
