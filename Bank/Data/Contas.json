@@ -1,3 +1,22 @@
 [
+<<<<<<< HEAD
+  {
+    "Conta": 19177,
+    "Agencia": {
+      "Cidade": "Alto Paraiso - RO",
+      "Agencia": "743-81"
+    },
+    "Saldo": 0.0,
+    "Limite": 5000.0,
+    "Senha": "1212",
+    "Titular": "Gabriel",
+    "Cpf": "411.334.050-10",
+    "Idade": 17,
+    "dataNascimento": "2006-07-18T00:00:00",
+    "Telefone": "(65) 3 4345-3452",
+    "Endereco": "T. 12"
+  }
+=======
 
+>>>>>>> e391e6bb32834042888a7bc2880e61c00d800a4d
 ]
