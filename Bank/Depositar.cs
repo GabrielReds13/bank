@@ -13,12 +13,6 @@ namespace Bank
 {
     public partial class Depositar : Form
     {
-        private Contas contaLogada { get; set; }
-        public Depositar(Contas contas)
-        {
-            contaLogada = contas;
-            InitializeComponent();
-        }
         public Depositar() 
         { 
             InitializeComponent();
@@ -26,11 +20,10 @@ namespace Bank
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
             Home home = new Home();
-
-            home.ShowDialog();
-            this.Close();
+            home.Visible = true;
+            Depositar depositar = new Depositar();
+            depositar.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

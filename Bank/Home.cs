@@ -38,6 +38,7 @@ namespace Bank
 
         private void btn_sacar_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             Sacar sacar = new Sacar();
             sacar.ShowDialog();
         }
@@ -49,6 +50,7 @@ namespace Bank
 
         private void btn_depositar_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             Depositar depositar = new Depositar();
             depositar.ShowDialog();
         }

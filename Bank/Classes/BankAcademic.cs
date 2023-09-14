@@ -135,7 +135,6 @@ namespace Bank.Classes
                 var contas = JsonConvert.DeserializeObject<List<Contas>>(bucarArquivo);
                 
                 Contas conta = contas.Find(c => c.Senha == senha);
-                MessageBox.Show(senha);
 
                 if(senha == conta.Senha)
                 {
@@ -144,8 +143,9 @@ namespace Bank.Classes
 
                    var contasJson = JsonConvert.SerializeObject(contas, Formatting.Indented);
                    File.WriteAllText(arquivo, contasJson);
+                   MessageBox.Show("Saque realizado com sucesso");
                 }
-                else
+                else if (senha != conta.Senha)
                 {
                     MessageBox.Show("Senha incorreta, tente novamente");
                 }
@@ -164,7 +164,6 @@ namespace Bank.Classes
                 var contas = JsonConvert.DeserializeObject<List<Contas>>(bucarArquivo);
 
                 Contas conta = contas.Find(c => c.Senha == senha);
-                MessageBox.Show(conta.Senha);
                 if (senha == conta.Senha)
                 {
                     double novoSaldo = conta.Saldo + valor;
@@ -172,8 +171,9 @@ namespace Bank.Classes
 
                     var contasJson = JsonConvert.SerializeObject(contas, Formatting.Indented);
                     File.WriteAllText(arquivo, contasJson);
+                    MessageBox.Show("Deposito realizado com sucesso");
                 }
-                else
+                else if (senha != conta.Senha)
                 {
                     MessageBox.Show("Senha incorreta, tente novamente");
                 }

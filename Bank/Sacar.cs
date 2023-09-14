@@ -14,14 +14,6 @@ namespace Bank
 {
     public partial class Sacar : Form
     {
-        //conta logada
-        private Contas contaLogada { get; set; }
-        //metodo construtor
-        public Sacar(Contas contas)
-        {
-            contaLogada = contas;
-            InitializeComponent();
-        }
         public Sacar()
         {
             InitializeComponent();
@@ -41,13 +33,11 @@ namespace Bank
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            this.Visible = false;
-            Home home = new Home();
 
-            home.ShowDialog();
-            this.Close();
-            
+            Home home = new Home();
+            home.Visible = true;
+            Sacar sacar = new Sacar();
+            sacar.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
