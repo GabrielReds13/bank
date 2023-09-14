@@ -57,6 +57,7 @@
     <Compile Include="Classes\BankAcademic.cs" />
     <Compile Include="Classes\Contas.cs" />
     <Compile Include="Classes\Pessoa.cs" />
+    <Compile Include="Classes\Historico.cs" />
     <Compile Include="Classes\Validar.cs" />
     <Compile Include="CriarConta.cs">
       <SubType>Form</SubType>
@@ -108,7 +109,7 @@
     </EmbeddedResource>
     <None Include="Data\Agencias.json" />
     <None Include="Data\Contas.json" />
-    <None Include="Data\Historico.json" />
+    <None Include="Data\Historicos\12345-12187.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

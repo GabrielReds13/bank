@@ -33,7 +33,7 @@
             this.lb_saldo = new System.Windows.Forms.Label();
             this.lb_limite = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tl_extrato = new System.Windows.Forms.ListBox();
+            this.lst_historico = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_sair = new System.Windows.Forms.PictureBox();
@@ -116,29 +116,26 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "Limite mensal:";
             // 
-            // tl_extrato
+            // lst_historico
             // 
-            this.tl_extrato.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tl_extrato.Font = new System.Drawing.Font("Gotham", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tl_extrato.FormattingEnabled = true;
-            this.tl_extrato.ItemHeight = 12;
-            this.tl_extrato.Items.AddRange(new object[] {
-            "I"});
-            this.tl_extrato.Location = new System.Drawing.Point(26, 308);
-            this.tl_extrato.Name = "tl_extrato";
-            this.tl_extrato.Size = new System.Drawing.Size(274, 264);
-            this.tl_extrato.TabIndex = 36;
+            this.lst_historico.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lst_historico.Font = new System.Drawing.Font("Gotham", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lst_historico.FormattingEnabled = true;
+            this.lst_historico.Location = new System.Drawing.Point(26, 305);
+            this.lst_historico.Name = "lst_historico";
+            this.lst_historico.Size = new System.Drawing.Size(274, 247);
+            this.lst_historico.TabIndex = 36;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(134, 278);
+            this.label2.Location = new System.Drawing.Point(93, 267);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 17);
+            this.label2.Size = new System.Drawing.Size(137, 17);
             this.label2.TabIndex = 38;
-            this.label2.Text = "Extrato";
+            this.label2.Text = "Histórico";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox4
             // 
@@ -245,7 +242,7 @@
             this.ClientSize = new System.Drawing.Size(324, 621);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.tl_extrato);
+            this.Controls.Add(this.lst_historico);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_sacar);
             this.Controls.Add(this.btn_depositar);
@@ -295,7 +292,7 @@
         private System.Windows.Forms.PictureBox btn_depositar;
         private System.Windows.Forms.PictureBox btn_sacar;
         private System.Windows.Forms.PictureBox btn_sair;
-        private System.Windows.Forms.ListBox tl_extrato;
+        private System.Windows.Forms.ListBox lst_historico;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label2;
     }

@@ -17,6 +17,8 @@ namespace Bank.Classes
         public string Endereco { get; set; }
 
         // - Metodo Construtor -
+        public Pessoa() {}
+
         public Pessoa(
             string titular,
             string cpf,

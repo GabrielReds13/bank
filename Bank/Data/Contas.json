@@ -1,3 +1,18 @@
 [
-
+  {
+    "Conta": 12345,
+    "Agencia": {
+      "Cidade": "Monte Nobre - RO",
+      "Agencia": "121-87"
+    },
+    "Saldo": 0.0,
+    "Limite": 5000.0,
+    "Senha": "1",
+    "Titular": "Beto Silva Carreiro",
+    "Cpf": "123.456.789-10",
+    "Idade": 18,
+    "dataNascimento": "2000-07-18T00:00:00",
+    "Telefone": "(00) 1 2345-6789",
+    "Endereco": "R. Ficticia - Bairro Imaginario"
+  }
 ]
