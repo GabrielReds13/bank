@@ -61,23 +61,24 @@
             // 
             this.lb_titular.AutoSize = true;
             this.lb_titular.BackColor = System.Drawing.Color.Black;
-            this.lb_titular.Font = new System.Drawing.Font("Gotham", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_titular.ForeColor = System.Drawing.Color.White;
             this.lb_titular.Location = new System.Drawing.Point(12, 24);
             this.lb_titular.Name = "lb_titular";
-            this.lb_titular.Size = new System.Drawing.Size(78, 18);
+            this.lb_titular.Size = new System.Drawing.Size(79, 20);
             this.lb_titular.TabIndex = 22;
             this.lb_titular.Text = "Olá User";
             this.lb_titular.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lb_titular.Click += new System.EventHandler(this.lb_titular_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Gotham", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(35, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 12);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 26;
             this.label1.Text = "Saldo:";
             // 
@@ -85,7 +86,7 @@
             // 
             this.lb_saldo.AutoSize = true;
             this.lb_saldo.BackColor = System.Drawing.Color.White;
-            this.lb_saldo.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_saldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.lb_saldo.Location = new System.Drawing.Point(35, 100);
             this.lb_saldo.Name = "lb_saldo";
             this.lb_saldo.Size = new System.Drawing.Size(65, 17);
@@ -96,7 +97,7 @@
             // 
             this.lb_limite.AutoSize = true;
             this.lb_limite.BackColor = System.Drawing.Color.Black;
-            this.lb_limite.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_limite.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.lb_limite.ForeColor = System.Drawing.Color.White;
             this.lb_limite.Location = new System.Drawing.Point(35, 151);
             this.lb_limite.Name = "lb_limite";
@@ -108,35 +109,34 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Black;
-            this.label4.Font = new System.Drawing.Font("Gotham", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(35, 139);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 12);
+            this.label4.Size = new System.Drawing.Size(73, 13);
             this.label4.TabIndex = 29;
             this.label4.Text = "Limite mensal:";
             // 
             // tl_extrato
             // 
             this.tl_extrato.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tl_extrato.Font = new System.Drawing.Font("Gotham", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tl_extrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tl_extrato.FormattingEnabled = true;
-            this.tl_extrato.ItemHeight = 12;
             this.tl_extrato.Items.AddRange(new object[] {
             "I"});
             this.tl_extrato.Location = new System.Drawing.Point(26, 308);
             this.tl_extrato.Name = "tl_extrato";
-            this.tl_extrato.Size = new System.Drawing.Size(274, 264);
+            this.tl_extrato.Size = new System.Drawing.Size(274, 260);
             this.tl_extrato.TabIndex = 36;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(134, 278);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 17);
+            this.label2.Size = new System.Drawing.Size(59, 17);
             this.label2.TabIndex = 38;
             this.label2.Text = "Extrato";
             // 
@@ -167,6 +167,7 @@
             this.btn_sacar.Size = new System.Drawing.Size(64, 64);
             this.btn_sacar.TabIndex = 33;
             this.btn_sacar.TabStop = false;
+            this.btn_sacar.Click += new System.EventHandler(this.btn_sacar_Click);
             // 
             // btn_depositar
             // 
@@ -177,6 +178,7 @@
             this.btn_depositar.Size = new System.Drawing.Size(64, 64);
             this.btn_depositar.TabIndex = 32;
             this.btn_depositar.TabStop = false;
+            this.btn_depositar.Click += new System.EventHandler(this.btn_depositar_Click);
             // 
             // btn_pix
             // 

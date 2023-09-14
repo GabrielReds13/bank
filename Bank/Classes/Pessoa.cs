@@ -33,5 +33,9 @@ namespace Bank.Classes
             this.Telefone = telefone;
             this.Endereco = endereco;
         }
+
+        public Pessoa()
+        {
+        }
     }
 }

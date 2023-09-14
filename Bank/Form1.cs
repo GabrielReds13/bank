@@ -54,13 +54,18 @@ namespace Bank
                     {
                         // Home
                         this.Visible = false; 
-                        Home home = new Home(a );
+                        Home home = new Home(a);
                         home.ShowDialog();
                         this.Close();
                     }
                     else MessageBox.Show("Verifique suas informações de login.");
                 }
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

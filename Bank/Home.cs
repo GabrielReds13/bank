@@ -31,6 +31,27 @@ namespace Bank
             lb_saldo.Text = contaLogada.Saldo.ToString("C2");
             lb_limite.Text = contaLogada.Limite.ToString("C2");
         }
+        public Home()
+        {
+            InitializeComponent();
+        }
+
+        private void btn_sacar_Click(object sender, EventArgs e)
+        {
+            Sacar sacar = new Sacar();
+            sacar.ShowDialog();
+        }
+
+        private void lb_titular_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_depositar_Click(object sender, EventArgs e)
+        {
+            Depositar depositar = new Depositar();
+            depositar.ShowDialog();
+        }
 
         // - Metodos -
     }

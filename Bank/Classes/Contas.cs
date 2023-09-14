@@ -9,6 +9,7 @@ namespace Bank.Classes
 {
     public class Contas : Pessoa
     {
+
         // - Atributos -
         public int Conta { get; set; }
         public Agencias Agencia { get; set; }
@@ -17,6 +18,7 @@ namespace Bank.Classes
         public string Senha { get; set; }
 
         // - Metodo Construtor -
+        public Contas():base() { }
         public Contas(
             // Pessoa
             string titular,

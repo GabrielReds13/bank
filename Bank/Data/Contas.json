@@ -1,3 +1,18 @@
 [
-
+  {
+    "Conta": 67851,
+    "Agencia": {
+      "Cidade": "Ji-Paraná - RO",
+      "Agencia": "990-38"
+    },
+    "Saldo": 0.0,
+    "Limite": 5000.0,
+    "Senha": "123456",
+    "Titular": "Thiago Silva Samasquini",
+    "Cpf": "025.159.042-97",
+    "Idade": 15,
+    "dataNascimento": "2008-01-31T00:00:00",
+    "Telefone": "(69) 9 9371-8378",
+    "Endereco": "Rua menezes, 2021"
+  }
 ]

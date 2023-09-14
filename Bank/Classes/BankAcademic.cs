@@ -125,5 +125,63 @@ namespace Bank.Classes
                 return null;
             }
         }
+
+        public static void Sacar(double valor, string senha)
+        {
+            try
+            {
+                string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\{arquivos[0]}";
+                var bucarArquivo = File.ReadAllText(arquivo);
+                var contas = JsonConvert.DeserializeObject<List<Contas>>(bucarArquivo);
+                
+                Contas conta = contas.Find(c => c.Senha == senha);
+                MessageBox.Show(senha);
+
+                if(senha == conta.Senha)
+                {
+                   double novoSaldo = conta.Saldo - valor;
+                   conta.Saldo = novoSaldo;
+
+                   var contasJson = JsonConvert.SerializeObject(contas, Formatting.Indented);
+                   File.WriteAllText(arquivo, contasJson);
+                }
+                else
+                {
+                    MessageBox.Show("Senha incorreta, tente novamente");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Falha no saque.");
+            }
+        }
+        public static void Depositar(double valor, string senha)
+        {
+            try
+            {
+                string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\{arquivos[0]}";
+                var bucarArquivo = File.ReadAllText(arquivo);
+                var contas = JsonConvert.DeserializeObject<List<Contas>>(bucarArquivo);
+
+                Contas conta = contas.Find(c => c.Senha == senha);
+                MessageBox.Show(conta.Senha);
+                if (senha == conta.Senha)
+                {
+                    double novoSaldo = conta.Saldo + valor;
+                    conta.Saldo = novoSaldo;
+
+                    var contasJson = JsonConvert.SerializeObject(contas, Formatting.Indented);
+                    File.WriteAllText(arquivo, contasJson);
+                }
+                else
+                {
+                    MessageBox.Show("Senha incorreta, tente novamente");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Falha no deposito.");
+            }
+        }
     }
 }

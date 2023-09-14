@@ -53,11 +53,11 @@
             // 
             this.btn_criarConta.AutoSize = true;
             this.btn_criarConta.BackColor = System.Drawing.Color.Black;
-            this.btn_criarConta.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_criarConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_criarConta.ForeColor = System.Drawing.Color.White;
             this.btn_criarConta.Location = new System.Drawing.Point(197, 586);
             this.btn_criarConta.Name = "btn_criarConta";
-            this.btn_criarConta.Size = new System.Drawing.Size(70, 16);
+            this.btn_criarConta.Size = new System.Drawing.Size(72, 16);
             this.btn_criarConta.TabIndex = 23;
             this.btn_criarConta.Text = "Crie uma.";
             this.btn_criarConta.Click += new System.EventHandler(this.btn_criarConta_Click);
@@ -66,11 +66,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Gotham", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(58, 587);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 15);
+            this.label3.Size = new System.Drawing.Size(130, 16);
             this.label3.TabIndex = 22;
             this.label3.Text = "Não tem uma conta?";
             // 
@@ -78,10 +78,10 @@
             // 
             this.btn_recuperarSenha.AutoSize = true;
             this.btn_recuperarSenha.BackColor = System.Drawing.Color.White;
-            this.btn_recuperarSenha.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_recuperarSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_recuperarSenha.Location = new System.Drawing.Point(183, 476);
             this.btn_recuperarSenha.Name = "btn_recuperarSenha";
-            this.btn_recuperarSenha.Size = new System.Drawing.Size(87, 16);
+            this.btn_recuperarSenha.Size = new System.Drawing.Size(89, 16);
             this.btn_recuperarSenha.TabIndex = 21;
             this.btn_recuperarSenha.Text = "Clique aqui.";
             this.btn_recuperarSenha.Click += new System.EventHandler(this.btn_recuperarSenha_Click);
@@ -90,17 +90,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Gotham", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(55, 477);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 15);
+            this.label1.Size = new System.Drawing.Size(126, 16);
             this.label1.TabIndex = 20;
             this.label1.Text = "Esqueceu a senha?";
             // 
             // txt_senha
             // 
             this.txt_senha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_senha.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_senha.Location = new System.Drawing.Point(29, 434);
             this.txt_senha.Name = "txt_senha";
             this.txt_senha.Size = new System.Drawing.Size(270, 15);
@@ -110,7 +110,7 @@
             // txt_conta
             // 
             this.txt_conta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_conta.Font = new System.Drawing.Font("Gotham", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_conta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_conta.Location = new System.Drawing.Point(29, 376);
             this.txt_conta.Multiline = true;
             this.txt_conta.Name = "txt_conta";
@@ -172,6 +172,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // form_login
             // 
