@@ -34,7 +34,7 @@ namespace Bank
             lb_limite.Text = contaLogada.Limite.ToString("C2");
 
             // Historico
-            try
+            /* try
             {
                 List<Historico> transacoes = BankAcademic.PegarHistorico(contaLogada.Conta, contaLogada.Agencia.Agencia);
 
@@ -73,7 +73,7 @@ namespace Bank
                 // Excessoes
                 if (ex is NullReferenceException || ex is ArgumentNullException) MessageBox.Show(msg);
                 else MessageBox.Show(msg);
-            } 
+            } */
         }
 
         // - Metodos  -
