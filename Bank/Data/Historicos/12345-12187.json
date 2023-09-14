@@ -1,19 +1,2 @@
 ﻿[
-  {
-    "Id": 1,
-    "TitularRemetente": "User Name 1",
-    "ContaRemetente": 93849,
-    "AgenciaRemetente": {
-      "Cidade": "Ariquemes - RO",
-      "Agencia": "121-87"
-    },
-    "TitularDestinatario": "User Name 2",
-    "ContaDestinatario": 28155,
-    "AgenciaDestinatario": {
-      "Cidade": "Ariquemes - RO",
-      "Agencia": "112-16"
-    },
-    "Valor": 500.50,
-    "Pago": true
-  }
 ]

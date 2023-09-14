@@ -121,6 +121,9 @@
   <data name="Criar-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Criar-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Recarregar-Btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Recarregar-Btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logout-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logout-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,8 +160,8 @@
   <data name="FazerDeposito-Btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FazerDeposito-Btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Background-Wallpaper-New-Account" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background-Wallpaper-New-Account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logo-BigSize-Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo-BigSize-Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Login-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +169,8 @@
   <data name="Logo-SmallSize-White" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo-SmallSize-White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo-BigSize-Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo-BigSize-Black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Background-Wallpaper-New-Account" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background-Wallpaper-New-Account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sacar-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sacar-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,7 +181,7 @@
   <data name="Alterar-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Alterar-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Recarregar-Btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Recarregar-Btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="iLUSTRACAO-NEW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iLUSTRACAO-NEW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

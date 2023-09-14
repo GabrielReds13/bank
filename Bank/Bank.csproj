@@ -153,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App-Icon.ico" />
+    <None Include="Resources\iLUSTRACAO-NEW.png" />
     <None Include="Resources\Recarregar-Btn.png" />
     <None Include="Resources\FazerDeposito-Btn.png" />
     <None Include="Resources\FazerSaque-Btn.png" />

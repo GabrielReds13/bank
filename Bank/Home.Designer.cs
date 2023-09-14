@@ -35,7 +35,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lst_historico = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.btn_sair = new System.Windows.Forms.PictureBox();
             this.btn_sacar = new System.Windows.Forms.PictureBox();
             this.btn_depositar = new System.Windows.Forms.PictureBox();
@@ -44,7 +44,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_sair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_sacar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_depositar)).BeginInit();
@@ -53,6 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_titular
@@ -118,10 +120,11 @@
             // 
             // lst_historico
             // 
+            this.lst_historico.BackColor = System.Drawing.Color.Black;
             this.lst_historico.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lst_historico.Font = new System.Drawing.Font("Gotham", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lst_historico.FormattingEnabled = true;
-            this.lst_historico.Location = new System.Drawing.Point(26, 305);
+            this.lst_historico.Location = new System.Drawing.Point(40, 313);
             this.lst_historico.Name = "lst_historico";
             this.lst_historico.Size = new System.Drawing.Size(274, 247);
             this.lst_historico.TabIndex = 36;
@@ -130,20 +133,22 @@
             // 
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(93, 267);
+            this.label2.Location = new System.Drawing.Point(112, 267);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 17);
             this.label2.TabIndex = 38;
             this.label2.Text = "Histórico";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox4
+            // pictureBox6
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(26, 263);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(270, 1);
-            this.pictureBox4.TabIndex = 37;
-            this.pictureBox4.TabStop = false;
+            this.pictureBox6.BackColor = System.Drawing.Color.White;
+            this.pictureBox6.BackgroundImage = global::Bank.Properties.Resources.iLUSTRACAO_NEW;
+            this.pictureBox6.Location = new System.Drawing.Point(85, 313);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(151, 190);
+            this.pictureBox6.TabIndex = 39;
+            this.pictureBox6.TabStop = false;
             // 
             // btn_sair
             // 
@@ -228,15 +233,22 @@
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(30, 263);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(270, 1);
+            this.pictureBox4.TabIndex = 37;
+            this.pictureBox4.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(324, 621);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.lst_historico);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_sacar);
             this.Controls.Add(this.btn_depositar);
@@ -250,11 +262,13 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lb_titular);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.lst_historico);
+            this.Controls.Add(this.label2);
             this.MaximumSize = new System.Drawing.Size(340, 660);
             this.MinimumSize = new System.Drawing.Size(340, 660);
             this.Name = "Home";
             this.Text = "Home";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_sair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_sacar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_depositar)).EndInit();
@@ -263,6 +277,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,5 +301,6 @@
         private System.Windows.Forms.ListBox lst_historico;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
