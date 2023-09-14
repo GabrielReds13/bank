@@ -74,7 +74,16 @@ namespace Bank
                         txt_senha.Text
                     );
 
-                    BankAcademic.SalvarConta(novaConta);
+                    bool verificar = BankAcademic.SalvarConta(novaConta);
+
+                    if(verificar != false)
+                    {
+                        this.Visible = false;
+                        form_login login = new form_login();
+                        login.ShowDialog();
+                        this.Close();
+                    }
+                    else { }
                 }
             }
             catch (Exception ex)

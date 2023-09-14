@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bank.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,18 +22,24 @@ namespace Bank
         // Cancelar recuperacao
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
-            /* Para testes
-            form_recuperarSenha recuperarSenha = new form_recuperarSenha();
-            recuperarSenha.Close();
-            form_login login = new form_login();
-            this.Visible = false;
-            login.ShowDialog();
-            */
 
             this.Visible = false;
             form_login login = new form_login();
             login.ShowDialog();
             this.Close();
+        }
+
+        private void btn_alterar_Click(object sender, EventArgs e)
+        {
+            bool validar = BankAcademic.AlterarSenha(int.Parse(txt_conta.Text), txt_cpf.Text, txt_novaSenha.Text);
+            if (validar != false)
+            {
+                this.Visible = false;
+                form_login login = new form_login();
+                login.ShowDialog();
+                this.Close();
+            }
+            else { }
         }
     }
 }

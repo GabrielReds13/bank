@@ -19,7 +19,7 @@ namespace Bank.Classes
         /*
          * Conta - Comandos
          */
-        public static void SalvarConta(Contas conta)
+        public static bool SalvarConta(Contas conta)
         {
             try 
             {
@@ -34,6 +34,7 @@ namespace Bank.Classes
                 // Salvar conta
                 var contasJson = JsonConvert.SerializeObject(contas, Formatting.Indented);
                 File.WriteAllText(arquivo, contasJson);
+                return true;
 
                 /*
                 // Gerar historico
@@ -53,6 +54,7 @@ namespace Bank.Classes
             catch (Exception) 
             { 
                 MessageBox.Show("Ocorreu um erro ao criar a conta.\n Tente novamente.");
+                return false;
             }
         }
 
@@ -182,6 +184,49 @@ namespace Bank.Classes
             }
         }
 
-        
+        public static bool AlterarSenha(int numConta, string cpf, string senha)
+        {
+            try
+            {
+                // * Verificar
+                if(Validar.VerificarCPF(cpf) != false)
+                {
+                    // Buscar json
+                    string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\{arquivos[0]}";
+                    var buscarArquivo = File.ReadAllText(arquivo);
+                    var contas = JsonConvert.DeserializeObject<List<Contas>>(buscarArquivo);
+
+                    List<Contas> a = contas;
+                    Contas encontrarConta = a.Find(Contas => Contas.Conta == numConta && Contas.Cpf == cpf);
+
+                    // Alterar senha
+                    encontrarConta.Senha = senha;
+
+                    // Salvar altearcoes
+                    var contaJson = JsonConvert.SerializeObject(a, Formatting.Indented);
+                    File.WriteAllText(arquivo, contaJson);
+                    
+                    MessageBox.Show("Senha alterada com êxito.");
+                    return true;
+                }
+                else
+                {
+                    string msg = "CPF inválido.";
+                    MessageBox.Show(msg);
+                    return false;
+                }
+
+            }
+            catch(Exception ex)
+            {
+                string msg = "Erro ao alterar senha.";
+
+                // Excessoes
+                if (ex is NullReferenceException || ex is ArgumentNullException) MessageBox.Show(msg);
+                else MessageBox.Show(msg);
+                return false;
+            }
+
+        }
     }
 }

@@ -36,7 +36,6 @@ namespace Bank
             {
                 List<Historico> transacoes = BankAcademic.PegarHistorico(contaLogada.Conta, contaLogada.Agencia.Agencia);
 
-                MessageBox.Show($"{transacoes[0].Id}");
                 // Validar historico
                 if(transacoes != null)
                 {
