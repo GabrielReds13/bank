@@ -65,6 +65,12 @@
     <Compile Include="CriarConta.Designer.cs">
       <DependentUpon>CriarConta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Depositar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depositar.Designer.cs">
+      <DependentUpon>Depositar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,8 +91,23 @@
     <Compile Include="RecuperarSenha.Designer.cs">
       <DependentUpon>RecuperarSenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sacar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sacar.Designer.cs">
+      <DependentUpon>Sacar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transferir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transferir.Designer.cs">
+      <DependentUpon>Transferir.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CriarConta.resx">
       <DependentUpon>CriarConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depositar.resx">
+      <DependentUpon>Depositar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -107,6 +128,12 @@
     <EmbeddedResource Include="RecuperarSenha.resx">
       <DependentUpon>RecuperarSenha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sacar.resx">
+      <DependentUpon>Sacar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transferir.resx">
+      <DependentUpon>Transferir.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Data\Agencias.json" />
     <None Include="Data\Contas.json" />
     <None Include="Data\Historicos\12345-12187.json" />
@@ -126,6 +153,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App-Icon.ico" />
+    <None Include="Resources\Recarregar-Btn.png" />
+    <None Include="Resources\FazerDeposito-Btn.png" />
+    <None Include="Resources\FazerSaque-Btn.png" />
+    <None Include="Resources\Fechar-Btn.png" />
+    <None Include="Resources\Transferir-Tela-Btn.png" />
     <None Include="Resources\Transferir-Button1.png" />
     <None Include="Resources\Transferir-Button.png" />
     <None Include="Resources\Pix-Button.png" />

@@ -15,3 +15,6 @@ C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\bin\
 C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\bin\Debug\Newtonsoft.Json.xml
 C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.csproj.CopyComplete
 C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.Home.resources
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.Depositar.resources
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.Sacar.resources
+C:\Users\gabri\OneDrive\Documentos\IFRO\Matérias\PO2\2°Semestre\Bank\Bank\obj\Debug\Bank.Transferir.resources

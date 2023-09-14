@@ -17,18 +17,20 @@ namespace Bank
         private Contas contaLogada { get; set; }
 
         // - Metodo Construtor -
-        public Home(Contas conta)
+        public Home(int numConta, string senha)
         {
             InitializeComponent();
             // Pegar usuario 
-            contaLogada = conta;
+            contaLogada = BankAcademic.Login(numConta, senha);
 
             // Variaveis
             string[] nome = contaLogada.Titular.Split(char.Parse(" "));
 
             // Setar forms
             lb_titular.Text = $"Olá, {nome[0]}";
+            lb_saldo.Refresh();
             lb_saldo.Text = contaLogada.Saldo.ToString("C2");
+            lb_limite.Refresh();
             lb_limite.Text = contaLogada.Limite.ToString("C2");
 
             // Historico
@@ -39,7 +41,6 @@ namespace Bank
                 // Validar historico
                 if(transacoes != null)
                 {
-                    MessageBox.Show("Não é nulo");
                     // Formatar lista
                     for(int i = 0; i < transacoes.Count; i++)
                     {   
@@ -75,6 +76,43 @@ namespace Bank
             } 
         }
 
-        // - Metodos -
+        // - Metodos  -
+        private void btn_sair_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            form_login login = new form_login();
+            login.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_transferir_Click(object sender, EventArgs e)
+        {
+            this.Close(); this.Visible = false;
+            Transferir transferir = new Transferir(contaLogada);
+            transferir.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_depositar_Click(object sender, EventArgs e)
+        {
+            this.Close(); this.Visible = false;
+            Depositar depositar = new Depositar(contaLogada);
+            depositar.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_sacar_Click(object sender, EventArgs e)
+        {
+            this.Close(); this.Visible = false;
+            Sacar sacar = new Sacar(contaLogada);
+            sacar.ShowDialog();
+            this.Close();
+        }
+
+        // - Metodos Irrelevantes -
+        private void btn_recarregar_Click(object sender, EventArgs e)
+        {
+        }
+
     }
 }

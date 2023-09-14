@@ -143,6 +143,36 @@ namespace Bank.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FazerDeposito_Btn {
+            get {
+                object obj = ResourceManager.GetObject("FazerDeposito-Btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FazerSaque_Btn {
+            get {
+                object obj = ResourceManager.GetObject("FazerSaque-Btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fechar_Btn {
+            get {
+                object obj = ResourceManager.GetObject("Fechar-Btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_Button {
             get {
                 object obj = ResourceManager.GetObject("Login-Button", resourceCulture);
@@ -193,6 +223,16 @@ namespace Bank.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Recarregar_Btn {
+            get {
+                object obj = ResourceManager.GetObject("Recarregar-Btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sacar_Button {
             get {
                 object obj = ResourceManager.GetObject("Sacar-Button", resourceCulture);
@@ -216,6 +256,16 @@ namespace Bank.Properties {
         internal static System.Drawing.Bitmap Transferir_Button1 {
             get {
                 object obj = ResourceManager.GetObject("Transferir-Button1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Transferir_Tela_Btn {
+            get {
+                object obj = ResourceManager.GetObject("Transferir-Tela-Btn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

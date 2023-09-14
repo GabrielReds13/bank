@@ -39,7 +39,6 @@
             this.btn_sair = new System.Windows.Forms.PictureBox();
             this.btn_sacar = new System.Windows.Forms.PictureBox();
             this.btn_depositar = new System.Windows.Forms.PictureBox();
-            this.btn_pix = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btn_transferir = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -49,7 +48,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_sair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_sacar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_depositar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_pix)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_transferir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -73,8 +71,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Gotham", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(35, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 12);
@@ -84,8 +83,9 @@
             // lb_saldo
             // 
             this.lb_saldo.AutoSize = true;
-            this.lb_saldo.BackColor = System.Drawing.Color.White;
+            this.lb_saldo.BackColor = System.Drawing.Color.Black;
             this.lb_saldo.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_saldo.ForeColor = System.Drawing.Color.White;
             this.lb_saldo.Location = new System.Drawing.Point(35, 100);
             this.lb_saldo.Name = "lb_saldo";
             this.lb_saldo.Size = new System.Drawing.Size(65, 17);
@@ -95,9 +95,9 @@
             // lb_limite
             // 
             this.lb_limite.AutoSize = true;
-            this.lb_limite.BackColor = System.Drawing.Color.Black;
+            this.lb_limite.BackColor = System.Drawing.Color.White;
             this.lb_limite.Font = new System.Drawing.Font("Gotham", 10F, System.Drawing.FontStyle.Bold);
-            this.lb_limite.ForeColor = System.Drawing.Color.White;
+            this.lb_limite.ForeColor = System.Drawing.Color.Black;
             this.lb_limite.Location = new System.Drawing.Point(35, 151);
             this.lb_limite.Name = "lb_limite";
             this.lb_limite.Size = new System.Drawing.Size(65, 17);
@@ -107,9 +107,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Gotham", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(35, 139);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 12);
@@ -154,40 +154,33 @@
             this.btn_sair.Size = new System.Drawing.Size(300, 32);
             this.btn_sair.TabIndex = 35;
             this.btn_sair.TabStop = false;
+            this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
             // 
             // btn_sacar
             // 
             this.btn_sacar.BackColor = System.Drawing.Color.White;
             this.btn_sacar.BackgroundImage = global::Bank.Properties.Resources.Sacar_Button;
-            this.btn_sacar.Location = new System.Drawing.Point(166, 182);
+            this.btn_sacar.Location = new System.Drawing.Point(236, 182);
             this.btn_sacar.Name = "btn_sacar";
             this.btn_sacar.Size = new System.Drawing.Size(64, 64);
             this.btn_sacar.TabIndex = 33;
             this.btn_sacar.TabStop = false;
+            this.btn_sacar.Click += new System.EventHandler(this.btn_sacar_Click);
             // 
             // btn_depositar
             // 
             this.btn_depositar.BackColor = System.Drawing.Color.White;
             this.btn_depositar.BackgroundImage = global::Bank.Properties.Resources.Depositar_Button;
-            this.btn_depositar.Location = new System.Drawing.Point(96, 182);
+            this.btn_depositar.Location = new System.Drawing.Point(131, 182);
             this.btn_depositar.Name = "btn_depositar";
             this.btn_depositar.Size = new System.Drawing.Size(64, 64);
             this.btn_depositar.TabIndex = 32;
             this.btn_depositar.TabStop = false;
-            // 
-            // btn_pix
-            // 
-            this.btn_pix.BackColor = System.Drawing.Color.White;
-            this.btn_pix.BackgroundImage = global::Bank.Properties.Resources.Pix_Button;
-            this.btn_pix.Location = new System.Drawing.Point(236, 182);
-            this.btn_pix.Name = "btn_pix";
-            this.btn_pix.Size = new System.Drawing.Size(64, 64);
-            this.btn_pix.TabIndex = 31;
-            this.btn_pix.TabStop = false;
+            this.btn_depositar.Click += new System.EventHandler(this.btn_depositar_Click);
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Black;
+            this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Location = new System.Drawing.Point(26, 131);
             this.pictureBox5.Name = "pictureBox5";
@@ -204,10 +197,11 @@
             this.btn_transferir.Size = new System.Drawing.Size(64, 64);
             this.btn_transferir.TabIndex = 25;
             this.btn_transferir.TabStop = false;
+            this.btn_transferir.Click += new System.EventHandler(this.btn_transferir_Click);
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.BackColor = System.Drawing.Color.Black;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Location = new System.Drawing.Point(26, 80);
             this.pictureBox3.Name = "pictureBox3";
@@ -246,7 +240,6 @@
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_sacar);
             this.Controls.Add(this.btn_depositar);
-            this.Controls.Add(this.btn_pix);
             this.Controls.Add(this.lb_limite);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox5);
@@ -265,7 +258,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_sair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_sacar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_depositar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_pix)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_transferir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -288,7 +280,6 @@
         private System.Windows.Forms.Label lb_limite;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox btn_pix;
         private System.Windows.Forms.PictureBox btn_depositar;
         private System.Windows.Forms.PictureBox btn_sacar;
         private System.Windows.Forms.PictureBox btn_sair;

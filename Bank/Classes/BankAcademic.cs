@@ -228,5 +228,145 @@ namespace Bank.Classes
             }
 
         }
+        
+        public static bool Sacar(int numConta, double valor)
+        {
+            try
+            {
+                // * Verificar
+                // Buscar json
+                string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\{arquivos[0]}";
+                var buscarArquivo = File.ReadAllText(arquivo);
+                var contas = JsonConvert.DeserializeObject<List<Contas>>(buscarArquivo);
+
+                List<Contas> a = contas;
+                Contas encontrarConta = a.Find(Contas => Contas.Conta == numConta);
+
+                // Alterar saldo
+                if (valor <= encontrarConta.Saldo && valor > 0)
+                {
+                    encontrarConta.Saldo -= valor;
+
+                    // Salvar altearcoes
+                    var contaJson = JsonConvert.SerializeObject(a, Formatting.Indented);
+                    File.WriteAllText(arquivo, contaJson);
+
+                    MessageBox.Show("Saque feito com êxito.");
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("Valor inválido.");
+                    return true;
+                }
+            }
+            catch(Exception ex)
+            {
+                string msg = "Erro ao sacar.";
+
+                // Excessoes
+                if (ex is NullReferenceException || ex is ArgumentNullException) MessageBox.Show(msg);
+                else MessageBox.Show(msg);
+                return false;
+            }
+
+        }
+
+        public static bool Depositar(int numConta, double valor)
+        {
+            try
+            {
+                // * Verificar
+                // Buscar json
+                string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\{arquivos[0]}";
+                var buscarArquivo = File.ReadAllText(arquivo);
+                var contas = JsonConvert.DeserializeObject<List<Contas>>(buscarArquivo);
+
+                List<Contas> a = contas;
+                Contas encontrarConta = a.Find(Contas => Contas.Conta == numConta);
+
+                // Alterar saldo
+                if(valor > 0)
+                {
+                    // Salvar altearcoes
+                    encontrarConta.Saldo += valor;
+                    var contaJson = JsonConvert.SerializeObject(a, Formatting.Indented);
+                    File.WriteAllText(arquivo, contaJson);
+
+                    MessageBox.Show("Depósito feito com êxito.");
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("Valor inválido.");
+                    return false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                string msg = "Erro ao depositar.";
+
+                // Excessoes
+                if (ex is NullReferenceException || ex is ArgumentNullException) MessageBox.Show(msg);
+                else MessageBox.Show(msg);
+                return false;
+            }
+
+        }
+
+        public static bool Transferir(int numContaRemetente, int numContaDestinatario, double valor)
+        {
+            try
+            {
+                // * Verificar
+                // Buscar json
+                string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\{arquivos[0]}";
+                var buscarArquivo = File.ReadAllText(arquivo);
+                var contas = JsonConvert.DeserializeObject<List<Contas>>(buscarArquivo);
+
+                List<Contas> a = contas;
+                Contas contaRemetente = a.Find(Contas => Contas.Conta == numContaRemetente);
+                Contas contaDestinatario = a.Find(Contas => Contas.Conta == numContaDestinatario);
+
+                // Alterar saldo
+                if(contaRemetente.Limite != 0)
+                {
+                    if(valor <= contaRemetente.Limite && valor <= contaRemetente.Saldo && valor > 0)
+                    {
+                        contaRemetente.Saldo -= valor;
+                        contaRemetente.Limite -= valor;
+                        contaDestinatario.Saldo += valor;
+
+                        // Salvar altearcoes
+                        var contaJson = JsonConvert.SerializeObject(a, Formatting.Indented);
+                        File.WriteAllText(arquivo, contaJson);
+
+                        MessageBox.Show("Transferência feita com êxito.");
+                        return true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("O valor é inválido.");
+                        return false;
+                    }
+                }
+                else 
+                {
+                    MessageBox.Show("Limite atingido.");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                string msg = "Erro ao transferir.";
+
+                // Excessoes
+                if (ex is NullReferenceException || ex is ArgumentNullException) MessageBox.Show(msg);
+                else MessageBox.Show(msg);
+                return false;
+            }
+
+        }
     }
 }
