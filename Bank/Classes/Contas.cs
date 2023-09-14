@@ -17,6 +17,8 @@ namespace Bank.Classes
         public string Senha { get; set; }
 
         // - Metodo Construtor -
+        public Contas() {}
+
         public Contas(
             // Pessoa
             string titular,

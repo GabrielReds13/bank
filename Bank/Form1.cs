@@ -54,7 +54,7 @@ namespace Bank
                     {
                         // Home
                         this.Visible = false; 
-                        Home home = new Home(a );
+                        Home home = new Home(a);
                         home.ShowDialog();
                         this.Close();
                     }

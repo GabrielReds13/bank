@@ -12,9 +12,13 @@ namespace Bank.Classes
     public static class BankAcademic
     {
         // - Atributos -
-        private static string[] arquivos = {"Contas.json", "Agencias.json", "Historico.json"};
+        private static string[] arquivos = {"Contas.json", "Agencias.json"};
 
         // - Metodos -
+
+        /*
+         * Conta - Comandos
+         */
         public static void SalvarConta(Contas conta)
         {
             try 
@@ -30,7 +34,23 @@ namespace Bank.Classes
                 // Salvar conta
                 var contasJson = JsonConvert.SerializeObject(contas, Formatting.Indented);
                 File.WriteAllText(arquivo, contasJson);
-            } catch (Exception ex) 
+
+                /*
+                // Gerar historico
+                string titularHistorico = $"{conta.Conta}-{conta.Agencia.Agencia.Replace("-", "")}.json";
+                string historico = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\Historicos";
+                string caminhoCompleto = Path.Combine(historico, titularHistorico);
+                string textoVazio = "[]";
+
+                MessageBox.Show($"{caminhoCompleto}");
+
+                // Criar arquivo
+                string novoArquivo = JsonConvert.SerializeObject(textoVazio);
+                File.Create(caminhoCompleto);
+                File.WriteAllText(caminhoCompleto, textoVazio);
+                */
+            }
+            catch (Exception) 
             { 
                 MessageBox.Show("Ocorreu um erro ao criar a conta.\n Tente novamente.");
             }
@@ -99,6 +119,9 @@ namespace Bank.Classes
             return agencias;
         }
 
+        /*
+         * Acoes - Sistema
+         */
         public static Contas Login(int numConta, string senha)
         {
             try
@@ -119,11 +142,46 @@ namespace Bank.Classes
                     return null;
                 }
             }
-            catch (Exception ex) 
+            catch (Exception) 
             {
                 MessageBox.Show("Erro ao fazer o login.");
                 return null;
             }
         }
+
+        /*
+         * Historico de Transferencia - Comandos
+         */
+        public static List<Historico> PegarHistorico(int numConta, string numAgencia)
+        {
+            try
+            {
+                // * Verificar
+
+                // Buscar historico
+                string arquivo = $@"{AppDomain.CurrentDomain.BaseDirectory}\..\..\Data\Historicos\{numConta}-{numAgencia.Replace("-", "")}.json";
+                var buscarArquivo = File.ReadAllText(arquivo);
+                var historicoCompleto = JsonConvert.DeserializeObject<List<Historico>>(buscarArquivo);
+                
+                List<Historico> historico = historicoCompleto;
+                
+                // Verificar historico
+                if (historico != null) return historico;
+                else return null;
+
+            }
+            catch(Exception ex) 
+            {
+                string msg = "Erro ao consultar histórico.";
+
+                // Excessoes
+                if (ex is NullReferenceException || ex is ArgumentNullException) MessageBox.Show(msg);
+                else MessageBox.Show(msg);
+
+                return null;
+            }
+        }
+
+        
     }
 }
